@@ -1,7 +1,10 @@
-package com.zengbobobase.demo;
+package com.zengbobobase.demo.activity;
 
 import com.zengbobo.android.packageManager.PackageInfoUtil;
 import com.zengbobo.android.packageManager.PackageStatsCallBack;
+import com.zengbobobase.demo.R;
+import com.zengbobobase.demo.R.id;
+import com.zengbobobase.demo.R.layout;
 
 import android.app.Activity;
 import android.content.pm.PackageStats;

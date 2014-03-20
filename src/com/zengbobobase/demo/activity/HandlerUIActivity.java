@@ -1,4 +1,4 @@
-package com.zengbobobase.demo;
+package com.zengbobobase.demo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

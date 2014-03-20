@@ -1,4 +1,4 @@
-package com.zengbobobase.demo;
+package com.zengbobobase.demo.activity;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -13,6 +13,9 @@ import android.widget.ListView;
 
 import com.zengbobo.android.packageManager.ApplicationInfoUtil;
 import com.zengbobo.android.packageManager.PackageInfoUtil;
+import com.zengbobobase.demo.R;
+import com.zengbobobase.demo.R.id;
+import com.zengbobobase.demo.R.layout;
 import com.zengbobobase.demo.adapter.ApplicationAdapter;
 import com.zengbobobase.demo.model.BaseModel;
 

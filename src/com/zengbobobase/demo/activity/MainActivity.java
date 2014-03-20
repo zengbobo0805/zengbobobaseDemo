@@ -1,4 +1,4 @@
-package com.zengbobobase.demo;
+package com.zengbobobase.demo.activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zengbobo.android.packageManager.ActivityInfoUtil;
+import com.zengbobobase.demo.R;
+import com.zengbobobase.demo.R.id;
+import com.zengbobobase.demo.R.layout;
+import com.zengbobobase.demo.R.string;
 import com.zengbobobase.demo.adapter.MyBaseAdapter;
 import com.zengbobobase.demo.model.BaseModel;
 
@@ -69,6 +73,7 @@ public class MainActivity extends Activity {
 				Looper.loop();
 			}
 		});
+		mThread.start();
 		
 	}
 	Handler handler = new Handler(){
@@ -85,7 +90,6 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		mThread.start();
 		
 	}
 

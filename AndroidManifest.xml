@@ -35,6 +35,11 @@
             android:label="获取手机安装应用程序信息" >
          
         </activity>
+          <activity
+            android:name=".HandlerUIActivity"
+            android:label="线程handler更新UI" >
+         
+        </activity>
     </application>
 
 </manifest>

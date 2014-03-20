@@ -11,6 +11,7 @@ import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FirstActivity extends Activity {
 
@@ -63,6 +64,8 @@ public class FirstActivity extends Activity {
 					buf.append("");
 					tv.setText(buf.toString());
 			
+			}else if(msg.what == 0x1004){
+				Toast.makeText(FirstActivity.this, "what:0x1004", Toast.LENGTH_SHORT).show();
 			}
 		}
 		

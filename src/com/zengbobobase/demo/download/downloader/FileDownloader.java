@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -12,6 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.Log;
 
 import com.zengbobobase.demo.download.dao.FileDownLoaderDao;
@@ -58,7 +60,13 @@ public class FileDownloader implements DownloadProgressListener {
 		print("downloadSize:"+downloadSize+"   fileSize:"+fileSize);
 		// 退出的时候保存下载进度，后面继续下载
 		for (int i = 0, len = threads.length; i < len; i++) {
+			if(threads[i]==null ){
+				continue;
+			}
 			update(threads[i].getThreadId(), threads[i].getDownLength());
+		}
+		if(downloadSize==fileSize){
+			onDownloadUpdateSize(0);
 		}
 		this.exit = true;
 	}
@@ -115,6 +123,7 @@ public class FileDownloader implements DownloadProgressListener {
 	 */
 	public FileDownloader(Context context, String downloadUrl,
 			File fileSaveDir, int threadNum) {
+		
 		try {
 			this.context = context;
 			this.downloadUrl = downloadUrl;
@@ -155,6 +164,11 @@ public class FileDownloader implements DownloadProgressListener {
 			conn.connect();
 			// 打印Http协议头
 			printResponseHeader(conn);
+			print("conn.getContent()：" + conn.getContent());
+			print("conn.getContentType()：" + conn.getContentType());
+			print("conn.getResponseMessage()：" + conn.getResponseMessage());
+			print("conn.getDate()：" + new Date(conn.getDate()));
+			
 			// 如果返回的状态码为200表示正常
 			// System.out.println("conn.getResponseCode()："+conn.getResponseCode());
 			if (conn.getResponseCode() == 200) {
@@ -285,6 +299,7 @@ public class FileDownloader implements DownloadProgressListener {
 			fileService.save(this.downloadUrl, this.data);
 			while (notFinish) {// 循环判断所有线程是否完成下载
 				Thread.sleep(900);
+				notFinish = false;
 				for (int i = 0; i < this.threads.length; i++) {
 					if (this.threads[i] != null && !this.threads[i].isFinish()) {// 如果发现线程未完成下载
 						notFinish = true;// 设置标志为下载没有完成
@@ -302,6 +317,8 @@ public class FileDownloader implements DownloadProgressListener {
 				onDownloadUpdateSize(this.downloadSize);// 通知目前已经下载完成的数据长度
 			}
 			// 如果下载完成
+
+			print("如果下载完成downloadSize:"+downloadSize+"  fileSize:"+fileSize);
 			if (downloadSize == this.fileSize) {
 				onDownloadSuccess(this.fileSize);
 				fileService.delete(this.downloadUrl);// 下载完成删除记录
@@ -343,6 +360,7 @@ public class FileDownloader implements DownloadProgressListener {
 			String key = entry.getKey() != null ? entry.getKey() + ":" : "";
 			print(key + entry.getValue());
 		}
+		
 	}
 
 	/**
@@ -387,5 +405,13 @@ public class FileDownloader implements DownloadProgressListener {
 	public void onDownloadToast(String success) {
 		if (listener != null)
 			listener.onDownloadToast(success);// 通知目前已经下载完成的数据长度
+	}
+	
+	
+	private void disableConnectionReuseIfNecessary() {
+	    // 这是一个2.2版本之前的bug
+	    if (Integer.parseInt(Build.VERSION.SDK) < Build.VERSION_CODES.FROYO) {
+	        System.setProperty("http.keepAlive", "false");
+	    }
 	}
 }

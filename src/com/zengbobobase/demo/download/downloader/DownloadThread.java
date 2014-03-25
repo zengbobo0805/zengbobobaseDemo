@@ -101,6 +101,7 @@ public class DownloadThread extends Thread {
 					 * print("Thread " + this.threadId + " download finish");
 					 * this.finish = true;
 					 **/
+					
 					// 获取输入流
 					InputStream inStream = http.getInputStream();
 					BufferedInputStream bis = new BufferedInputStream(inStream);
@@ -115,13 +116,15 @@ public class DownloadThread extends Thread {
 					// 分配缓冲区的大小
 					while (!downloader.getExit()
 							&& (offset = bis.read(buffer)) != -1) {
+						
 						outFileChannel
 								.write(ByteBuffer.wrap(buffer, 0, offset));// 开始写入数据到文件
 						downLength += offset; // 该线程以及下载的长度增加
 						// 更新数据库的位置需要换其他地方,会占用很多时间
 						// downloader.update(this.threadId, downLength);
 						// 修改数据库中该线程已经下载的数据长度
-						downloader.append(offset,threadId);// 文件下载器已经下载的总长度增加
+						downloader.append(offset, threadId);// 文件下载器已经下载的总长度增加
+						print("Thread " + this.threadId + " write:" + offset);
 					}
 					outFileChannel.force(true);
 					outFileChannel.close();
@@ -129,7 +132,8 @@ public class DownloadThread extends Thread {
 					inStream.close();
 					print("Thread " + this.threadId + " download finish");
 					this.finish = true;
-					downloader.onDownloadToast("Thread " + this.threadId + " download finish");
+					downloader.onDownloadToast("Thread " + this.threadId
+							+ " download finish");
 				}
 			} catch (Exception e) {
 				// 发生异常时，保存下载进度，后面继续下载

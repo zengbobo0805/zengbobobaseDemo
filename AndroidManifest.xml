@@ -47,6 +47,16 @@
             android:name="com.zengbobobase.demo.activity.MulThreadDownLoadFileActivity"
             android:label="多线程同时下载同一文件" >
         </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PrintActivity"
+            android:label="打印信息" >
+        </activity>
+        
+        <activity
+            android:name="com.zengbobobase.demo.activity.SinaActivity"
+            android:label="新浪微博webview" >
+        </activity>
+        
     </application>
 
 </manifest>

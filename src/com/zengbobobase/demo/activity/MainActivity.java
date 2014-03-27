@@ -11,13 +11,9 @@ import android.os.Looper;
 import android.os.Message;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.gift.android.R;
 import com.zengbobo.android.packageManager.ActivityInfoUtil;
-import com.zengbobobase.demo.R;
-import com.zengbobobase.demo.R.id;
-import com.zengbobobase.demo.R.layout;
-import com.zengbobobase.demo.R.string;
 import com.zengbobobase.demo.adapter.MyBaseAdapter;
 import com.zengbobobase.demo.model.BaseModel;
 

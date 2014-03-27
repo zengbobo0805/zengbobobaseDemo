@@ -16,12 +16,11 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.UUID;
 
-import com.zengbobo.android.utils.StringUtil;
-import com.zengbobobase.demo.R;
-
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Bitmap.CompressFormat;
+import android.graphics.BitmapFactory;
+
+import com.zengbobo.android.utils.StringUtil;
 
 public class SinaHttpUtil {
 	private static SinaHttpUtil singInstance = new SinaHttpUtil();

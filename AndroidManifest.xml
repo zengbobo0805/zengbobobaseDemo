@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zengbobobase.demo"
+    package="com.gift.android"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -16,11 +16,13 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_name_title"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.zengbobobase.demo.activity.MainActivity"
@@ -51,12 +53,24 @@
             android:name="com.zengbobobase.demo.activity.PrintActivity"
             android:label="打印信息" >
         </activity>
-        
         <activity
             android:name="com.zengbobobase.demo.activity.SinaActivity"
             android:label="新浪微博webview" >
         </activity>
-        
+        <activity
+            android:name="com.zengbobobase.demo.activity.SinaSDKActivity"
+            android:label="调用新浪微博SDK,从第三方 应用 唤起 微博客户端" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+      
+        <activity
+            android:name="com.zengbobobase.demo.sinweibo.ShareActivity"
+            android:label="新浪微博SDKShareActivity" >
+        </activity>
     </application>
 
 </manifest>

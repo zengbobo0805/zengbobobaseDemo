@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -43,7 +44,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.zengbobobase.demo.R;
+import com.gift.android.R;
 import com.zengbobobase.demo.sinweibo.AsyncWeiboRunner.RequestListener;
 
 /**
@@ -57,6 +58,7 @@ import com.zengbobobase.demo.sinweibo.AsyncWeiboRunner.RequestListener;
  * @author ZhangJie (zhangjie2@staff.sina.com.cn)
  */
 
+@SuppressLint("ResourceAsColor")
 public class ShareActivity extends Activity implements OnClickListener, RequestListener {
     private TextView mTextNum;
     private Button mSend;

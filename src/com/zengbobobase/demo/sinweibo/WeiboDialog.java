@@ -31,7 +31,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.zengbobobase.demo.R;
+import com.gift.android.R;
 
 public class WeiboDialog extends Dialog {
 

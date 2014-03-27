@@ -9,7 +9,6 @@ import java.util.Map;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 
-import com.zengbobobase.demo.sinweibo.Constant;
 
 public class SinaBusinessFactory {
 	// 请求用户授权Token

@@ -7,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.zengbobobase.demo.R;
+import com.gift.android.R;
 import com.zengbobobase.demo.model.BaseModel;
 
 public class MyBaseAdapter extends AbBaseAdapter {

@@ -1,11 +1,5 @@
 package com.zengbobobase.demo.activity;
 
-import com.zengbobo.android.packageManager.PackageInfoUtil;
-import com.zengbobo.android.packageManager.PackageStatsCallBack;
-import com.zengbobobase.demo.R;
-import com.zengbobobase.demo.R.id;
-import com.zengbobobase.demo.R.layout;
-
 import android.app.Activity;
 import android.content.pm.PackageStats;
 import android.os.Bundle;
@@ -15,6 +9,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.gift.android.R;
+import com.zengbobo.android.packageManager.PackageInfoUtil;
+import com.zengbobo.android.packageManager.PackageStatsCallBack;
 
 public class FirstActivity extends Activity {
 

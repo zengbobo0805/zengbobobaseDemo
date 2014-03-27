@@ -57,6 +57,9 @@ public class SinaSDK2Activity extends Activity implements IWeiboHandler.Request 
 
 		mShareWeiboAPI = WeiboShareSDK.createWeiboAPI(this, Constant.APP_KEY); // 创建分享实例
 		mShareWeiboAPI.handleWeiboRequest(getIntent(), this); // 处理微博客户端发送过来的请求
+//		android.os.IInterface;
+//		Binder
+//		sendBroadcast(intent, receiverPermission)
 	}
 
 	private OnClickListener btn1Listener = new OnClickListener() {

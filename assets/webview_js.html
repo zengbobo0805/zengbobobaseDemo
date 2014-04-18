@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control"
+	content="no-cache,no-store,max-age=0,s-maxage=0,must-revalidate" />
+<script type="text/javascript" language="javascript">
+		function getList() {
+				var pwd = document.forms[0].getElementById(\"ptlogin-password\").value;
+				document.write(mytestjs.getPassword(pwd));
+		}
+</script>
+<title>帐号设置</title>
+</head>
+
+<body class="unilogin" style="height: 100%">
+	<div id="ptlogin-container">
+		<h1 id="title">帐号设置</h1>
+		<!--  普通登录 -->
+		<!--注意：我们只要在这里执行我们的代码就可以了，因为登录的时候表单提交会执行onsubmit
+        或者就算HTML不是这么写的，也没关系，我们的本意是当表单提交的时候能执行我们的代码就行了
+        我们只要在Android中执行一段js，通过js给表单的onsubmit事件加入我们的代码，估计难不倒各位
+        -->
+		<form onsubmit="return false;">
+			<p>
+				<lable class="input-title">帐 号</lable>
+
+				<input type="tel" id="ptlogin-name" placeholder="请输入QQ号" /> <a
+					id="clearQQ">清除</a>
+			</p>
+			<p>
+				<lable class="input-title">密 码</lable>
+				<input type="password" id="ptlogin-password" placeholder="请输入密码">
+				<a id="clearPwd">清除</a>
+			</p>
+
+			<p>
+				<input id="ptlogin-submit" type="submit" value="登 录">
+			</p>
+			<input type="button" value="JavacallHtml2"
+				onclick="window.mytestjs.getPassword()" /> <input type="button"
+				value="JavacallHtml3"
+				onclick="window.mytestjs.getPassword('password')" />
+		</form>
+	</div>
+
+</body>
+</html>

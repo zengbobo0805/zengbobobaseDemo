@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>demo</title>
+</head>
+<body onload="javascript:window.javatojs.Callfunction('HTML')">
+	<script type="text/javascript" language="javascript">
+		function getList(int i) {
+			for ( var n = 0; n < i&&i>0; n++) {
+				var datalistdiv = document.getElementById("datalist"); //得到页面的div
+				pnode = document.createElement("p");//创建一个p标签，再建个textnode
+				tnode = document.createTextNode("hello"+i);
+				pnode.appendChild(tnode);//p中加入数据
+				datalistdiv.appendChild(pnode);//div中键入新的p
+			}
+		}
+	</script>
+	<div id="datalist">
+		<a onclick="window.javatojs.Callfunction()">on click me!点击我</a>
+	</div>
+</body>
+</html>

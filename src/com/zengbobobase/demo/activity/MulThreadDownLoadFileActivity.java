@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gift.android.R;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.download.downloader.DownloadTask;
 import com.zengbobobase.demo.utils.Contast;
 

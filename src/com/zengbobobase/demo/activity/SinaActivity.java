@@ -14,8 +14,8 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.gift.android.R;
 import com.zengbobo.android.utils.JsonUtil;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.sinweibo.my.AccessTokenInfo;
 import com.zengbobobase.demo.sinweibo.my.AccessTokenUtil;
 import com.zengbobobase.demo.sinweibo.my.Constant;

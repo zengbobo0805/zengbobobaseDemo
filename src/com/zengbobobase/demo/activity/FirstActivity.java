@@ -10,9 +10,9 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gift.android.R;
 import com.zengbobo.android.packageManager.PackageInfoUtil;
 import com.zengbobo.android.packageManager.PackageStatsCallBack;
+import com.zengbobobase.demo.R;
 
 public class FirstActivity extends Activity {
 

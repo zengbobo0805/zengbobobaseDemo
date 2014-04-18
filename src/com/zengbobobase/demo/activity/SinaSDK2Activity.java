@@ -24,7 +24,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.gift.android.R;
 import com.sina.weibo.sdk.api.TextObject;
 import com.sina.weibo.sdk.api.WeiboMessage;
 import com.sina.weibo.sdk.api.share.BaseRequest;
@@ -32,6 +31,7 @@ import com.sina.weibo.sdk.api.share.IWeiboHandler;
 import com.sina.weibo.sdk.api.share.IWeiboShareAPI;
 import com.sina.weibo.sdk.api.share.ProvideMessageForWeiboResponse;
 import com.sina.weibo.sdk.api.share.WeiboShareSDK;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.sinweibo.my.Constant;
 
 public class SinaSDK2Activity extends Activity implements IWeiboHandler.Request {

@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.gift.android.R;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.model.BaseModel;
 
 public class ApplicationAdapter extends AbBaseAdapter {

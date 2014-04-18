@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="http://pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="http://pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="shortcut icon" href="http://www.lvmama.com/favicon.ico" type="image/x-icon">
+    <title>调用登陆台demo</title>
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <script type="text/javascript" src="json2.js"></script>
+    <script type="text/javascript">
+
+    Function.prototype.getName = function(){
+        return this.name || this.toString().match(/function\s*([^(]*)\(/)[1];
+    }
+
+    var Lvmm = {
+        host:"Lvmm",
+        Login:function(options) {
+            var that = this;
+            var _optStr = that._fetchQueue(options);
+            var url = that.host+"Login://"+_optStr;
+            document.location = url;
+        },
+        //json对象转化为字符串
+        _fetchQueue:function(Queue) { 
+            var that = this;
+            var messageQueueString,
+                messageQueueArr = [];
+            //重组对象
+            for(var x in Queue){
+                switch(typeof Queue[x]){
+                    case 'string':
+                        Queue[x] = Queue[x];
+                    break;
+                    case 'function':
+                        Queue[x]= Queue[x].getName();
+                    break;
+                }
+                
+            }
+            messageQueueArr.push(Queue);
+            //console.log(Queue)
+            messageQueueString = JSON.stringify(messageQueueArr);
+            //console.log(messageQueueString)
+            //返回字符串的JSON格式
+            return messageQueueString;
+        }
+    }
+
+
+    function success(path){
+        //alert("成功登陆");
+       /*  http://m.lvmama.com/ticket/piao-100797/ */
+        window.location.href=path;
+    }
+    function fail(path){
+        alert("成功失败");
+        window.location.href=path;
+    }
+
+    //调用方法
+    var options = {};
+    options.login_third = "false";
+    options.onsuccess = success;
+    options.onfail = fail;
+
+    window.onload = function(){
+        document.getElementById("Test").onclick = function(){
+            alert("正在调起登陆台");
+            Lvmm.Login(options);
+        }
+
+        document.getElementById("Test2").onclick = function(){
+            
+            window.location.href="http://m.lvmama.com/ticket/piao-100797/";
+        }
+    }
+
+    
+    
+</script>
+
+</head>
+<body>
+    <input type="button" id="Test" value="登陆" />
+
+    <input type="button" id="Test2" value="跳转" />
+</body>
+</html>

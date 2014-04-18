@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gift.android"
+    package="com.zengbobobase.demo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,18 +20,23 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="com.zengbobobase.demo.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name_title"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.zengbobobase.demo.activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestAndroidActivity"
+            android:label="TestAndroidActivity" >
         </activity>
         <activity
             android:name="com.zengbobobase.demo.activity.FirstActivity"
@@ -66,10 +71,80 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-      
         <activity
             android:name="com.zengbobobase.demo.sinweibo.ShareActivity"
             android:label="新浪微博SDKShareActivity" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:label="腾讯SDK给应用的AndroidManifest增加SDK需要的配置"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100307986" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="腾讯SDK开发者因为忘了增加onActivityResult代码，而导致无法获得回调。"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.zengbobobase.demo.tencent.my.TencentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="腾讯sdk调用" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ApplicationTotalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="微信sdk调用" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="微信WXEntryActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MergeActivity"
+            android:label="MergeActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsActivity"
+            android:label="WebViewJsActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsNewActivity"
+            android:label="WebViewJsNewActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsLvmmActivity"
+            android:label="WebViewJsLvmmActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PhoneDPIActivity"
+            android:label="查看手机基本信息" >
+        </activity>
+         <activity
+            android:name="com.zengbobobase.demo.activity.DP_SPActivity"
+            android:label="dp,sp在系统下的字体设置效果" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ResultActivity"
+            android:label="@string/app_name_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="LvmmLogin" />
+            </intent-filter>
         </activity>
     </application>
 

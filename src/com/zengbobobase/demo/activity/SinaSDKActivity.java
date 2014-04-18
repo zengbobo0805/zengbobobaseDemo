@@ -11,7 +11,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.gift.android.R;
 import com.sina.weibo.sdk.api.ImageObject;
 import com.sina.weibo.sdk.api.TextObject;
 import com.sina.weibo.sdk.api.WeiboMultiMessage;
@@ -27,6 +26,7 @@ import com.sina.weibo.sdk.auth.sso.SsoHandler;
 import com.sina.weibo.sdk.constant.WBConstants;
 import com.sina.weibo.sdk.exception.WeiboAuthException;
 import com.sina.weibo.sdk.exception.WeiboException;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.sinweibo.my.Constant;
 
 public class SinaSDKActivity extends Activity implements IWeiboHandler.Response {

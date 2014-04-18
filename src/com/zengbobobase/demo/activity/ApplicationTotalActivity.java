@@ -10,8 +10,8 @@ import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.gift.android.R;
 import com.zengbobo.android.packageManager.PackageInfoUtil;
+import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.adapter.ApplicationAdapter;
 import com.zengbobobase.demo.model.BaseModel;
 

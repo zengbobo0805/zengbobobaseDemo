@@ -90,7 +90,7 @@ public class WebViewJsNewActivity extends Activity {
 //				@Override
 //				public void run() {
 					System.out.println("WebViewJsNewActivity Callfunction");
-					webView.loadUrl("javascript:getList(10)");
+					webView.loadUrl("javascript:window.getList(10)");
 //				}
 //			});
 		}

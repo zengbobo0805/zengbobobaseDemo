@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
+import android.webkit.WebSettings.LayoutAlgorithm;
 import android.webkit.WebSettings.PluginState;
+import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebViewClient;
 
 @SuppressLint("JavascriptInterface")
@@ -25,7 +27,11 @@ public class WebViewJsActivity extends Activity {
 		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT);
 		setContentView(webView, params);
+		webView.getSettings().setRenderPriority(RenderPriority.HIGH);
 		webView.getSettings().setJavaScriptEnabled(true);
+		webView.getSettings().setUseWideViewPort(true);
+		webView.getSettings().setSupportZoom(true);
+		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.NARROW_COLUMNS);
 
 		webView.addJavascriptInterface(new MyJavascriptInterface(), "mytestjs");
 		webView.setWebViewClient(new WebViewClient() {

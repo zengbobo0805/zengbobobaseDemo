@@ -150,11 +150,17 @@
             android:name="com.zengbobobase.demo.activity.MD5Activity"
             android:label="得到任意apk公钥信息的md5字符串" >
         </activity>
-         <activity
+        <activity
             android:name="com.zengbobobase.demo.activity.BitmapShadersActivity"
             android:label="BitmapShaders构造渲染器" >
         </activity>
-        
+        <activity
+            android:name="com.zengbobobase.demo.activity.OnclickActivity"
+            android:label="OnclickActivity" >
+        </activity>
+
+        <service android:name="com.zengbobobase.demo.service.MyService" >
+        </service>
     </application>
 
 </manifest>

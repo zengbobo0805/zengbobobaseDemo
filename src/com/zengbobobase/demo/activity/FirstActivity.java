@@ -31,27 +31,28 @@ public class FirstActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				// PackageInfoUtil.queryPacakgeSize(getApplicationContext(),
-				// getPackageName(), new PackageStatsCallBack() {
-				//
-				// @Override
-				// public void onCallBack(PackageStats stats) {
-				// Message msg = new Message();
-				// msg.what = 0x0001;
-				// msg.obj=stats;
-				// handler.sendMessage(msg);
-				//
-				// }
-				// });
+				PackageInfoUtil.queryPacakgeSize(getApplicationContext(),
+						getPackageName(), new PackageStatsCallBack() {
 
-//				Intent intent = getPackageManager().getLaunchIntentForPackage(
-//						"com.example.mylanouthmothdtest");
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("lvmama://m.lvmama.com"));
-				if (intent != null) {
-					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-					startActivity(intent);
-				}
+							@Override
+							public void onCallBack(PackageStats stats) {
+								Message msg = new Message();
+								msg.what = 0x0001;
+								msg.obj = stats;
+								handler.sendMessage(msg);
+
+							}
+						});
+
+				// Intent intent =
+				// getPackageManager().getLaunchIntentForPackage(
+				// "com.example.mylanouthmothdtest");
+				// Intent intent = new Intent(Intent.ACTION_VIEW);
+				// intent.setData(Uri.parse("lvmama://m.lvmama.com"));
+				// if (intent != null) {
+				// intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				// startActivity(intent);
+				// }
 			}
 		});
 	}

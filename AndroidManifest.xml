@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name="com.zengbobobase.demo.MyApplication"
@@ -157,6 +158,14 @@
         <activity
             android:name="com.zengbobobase.demo.activity.OnclickActivity"
             android:label="OnclickActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ConnectivityManagerActivity"
+            android:label="ConnectivityManager服务" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.GifActivity"
+            android:label="GifActivity" >
         </activity>
 
         <service android:name="com.zengbobobase.demo.service.MyService" >

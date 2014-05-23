@@ -167,6 +167,11 @@
             android:name="com.zengbobobase.demo.activity.GifActivity"
             android:label="GifActivity" >
         </activity>
+        
+            <activity
+            android:name="com.zengbobobase.demo.activity.DalvikActivity"
+            android:label="]Android内存管理及内存泄露DalvikActivity" >
+        </activity>
 
         <service android:name="com.zengbobobase.demo.service.MyService" >
         </service>

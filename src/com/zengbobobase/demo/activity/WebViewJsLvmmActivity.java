@@ -41,8 +41,8 @@ public class WebViewJsLvmmActivity extends Activity {
 					intent.setData(Uri.parse(url));
 					startActivityForResult(intent, 0);
 				}else{
-//					view.loadUrl(url);
-					Intent intent_1 = new Intent();
+					view.loadUrl(url);
+//					Intent intent_1 = new Intent();
 					
 				}
 

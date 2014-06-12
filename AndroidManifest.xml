@@ -172,6 +172,15 @@
             android:name="com.zengbobobase.demo.activity.DalvikActivity"
             android:label="]Android内存管理及内存泄露DalvikActivity" >
         </activity>
+           <activity
+            android:name="com.zengbobobase.demo.activity.ReLoadWebVIEWActivity"
+            android:label="ReLoadWebVIEWActivity" >
+        </activity>
+          <activity
+            android:name="com.zengbobobase.demo.activity.MyListViewViewGroupActiviy"
+            android:label="仿ios7信息栏滑动删除MyListViewViewGroupActiviy" >
+        </activity>
+            
 
         <service android:name="com.zengbobobase.demo.service.MyService" >
         </service>

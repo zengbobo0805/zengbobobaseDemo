@@ -37,8 +37,8 @@ import com.zengbobobase.demo.utils.FileUtils;
 import com.zengbobobase.demo.view.GifMovieView;
 
 public class GifActivity extends Activity {
-	private String path = "http://ww1.sinaimg.cn/bmiddle/56a92a6cjw1djwrliune3g.gif";
-//	private String path="http://img1.xcarimg.com/b55/s1450/m_lw3tksgasy8111.JPG";
+//	private String path = "http://ww1.sinaimg.cn/bmiddle/56a92a6cjw1djwrliune3g.gif";
+	private String path="http://img1.xcarimg.com/b55/s1450/m_lw3tksgasy8111.JPG";
 	GifMovieView gif1;
 
 	@Override
@@ -104,7 +104,9 @@ public class GifActivity extends Activity {
 			super.handleMessage(msg);
 			if (msg.what == 0x0001) {
 				System.out.println("GifActivity handler handleMessage:");
-				gif1.setMovie((Movie) msg.obj);
+//				gif1.setMovie((Movie) msg.obj);
+//				gif1.setBackgroundResource(R.drawable.bg_btn);
+				gif1.setBackgroundDrawable(GifActivity.this.getResources().getDrawable(R.drawable.bg_btn));
 			}
 		}
 

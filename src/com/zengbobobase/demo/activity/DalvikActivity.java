@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.zengbobobase.demo.R;
 
+//java object heap, bitmap heap, native object heap;
 public class DalvikActivity extends Activity {
 	private TextView tv;
 	private StringBuffer buf = new StringBuffer();

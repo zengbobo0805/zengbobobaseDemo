@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Movie;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
@@ -91,6 +92,31 @@ public class GifMovieView extends View {
 		}
 	}
 
+	@Override
+	public void setBackgroundColor(int color) {
+		// TODO Auto-generated method stub
+		super.setBackgroundColor(color);
+	}
+
+	@Override
+	public void setBackgroundResource(int resid) {
+		// TODO Auto-generated method stub
+		super.setBackgroundResource(resid);
+	}
+
+	@Override
+	public void setBackground(Drawable background) {
+		// TODO Auto-generated method stub
+		super.setBackground(background);
+	}
+
+	@Override
+	@Deprecated
+	public void setBackgroundDrawable(Drawable background) {
+		// TODO Auto-generated method stub
+		super.setBackgroundDrawable(background);
+	}
+
 	public void setMovieResource(int movieResId) {
 		this.mMovieResourceId = movieResId;
 		mMovie = Movie.decodeStream(getResources().openRawResource(mMovieResourceId));
@@ -131,51 +157,29 @@ public class GifMovieView extends View {
 
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-
+		System.out.println("GifMoviewView onMeasure mMovie:"+mMovie);
 		if (mMovie != null) {
 			int movieWidth = mMovie.width();
 			int movieHeight = mMovie.height();
 
-			/*
-			 * Calculate horizontal scaling
-			 */
+			System.out.println("GifMoviewView onMeasure movieWidth:"+movieWidth+",movieHeight:"+movieHeight);
 			float scaleH = 1f;
 			int measureModeWidth = MeasureSpec.getMode(widthMeasureSpec);
-
+			System.out.println("GifMoviewView onMeasure measureModeWidth:"+measureModeWidth);
 			if (measureModeWidth != MeasureSpec.UNSPECIFIED) {
 				int maximumWidth = MeasureSpec.getSize(widthMeasureSpec);
-				if (movieWidth > maximumWidth) {
-					scaleH = (float) movieWidth / (float) maximumWidth;
-				}
+				System.out.println("GifMoviewView onMeasure maximumWidth:"+maximumWidth);
+					scaleH = (float)maximumWidth  / (float)movieWidth;
 			}
 
-			/*
-			 * calculate vertical scaling
-			 */
-			float scaleW = 1f;
-			int measureModeHeight = MeasureSpec.getMode(heightMeasureSpec);
 
-			if (measureModeHeight != MeasureSpec.UNSPECIFIED) {
-				int maximumHeight = MeasureSpec.getSize(heightMeasureSpec);
-				if (movieHeight > maximumHeight) {
-					scaleW = (float) movieHeight / (float) maximumHeight;
-				}
-			}
-
-			/*
-			 * calculate overall scale
-			 */
-			mScale = 1f / Math.max(scaleH, scaleW);
-
+			mScale=scaleH;
 			mMeasuredMovieWidth = (int) (movieWidth * mScale);
 			mMeasuredMovieHeight = (int) (movieHeight * mScale);
-
+			System.out.println("GifMoviewView onMeasure scaleH:"+scaleH+",mMeasuredMovieWidth:"+mMeasuredMovieWidth+",mMeasuredMovieHeight:"+mMeasuredMovieHeight);
 			setMeasuredDimension(mMeasuredMovieWidth, mMeasuredMovieHeight);
 
 		} else {
-			/*
-			 * No movie set, just set minimum available size.
-			 */
 			setMeasuredDimension(getSuggestedMinimumWidth(), getSuggestedMinimumHeight());
 		}
 	}
@@ -183,7 +187,7 @@ public class GifMovieView extends View {
 	@Override
 	protected void onLayout(boolean changed, int l, int t, int r, int b) {
 		super.onLayout(changed, l, t, r, b);
-
+		System.out.println("GifMoviewView onLayout l:"+l+",t:"+t+",r:"+r+",b:"+b);
 		/*
 		 * Calculate left / top for drawing in center
 		 */
@@ -195,6 +199,8 @@ public class GifMovieView extends View {
 
 	@Override
 	protected void onDraw(Canvas canvas) {
+		System.out.println("GifMoviewView onDraw mMovie:"+mMovie);
+		System.out.println("GifMoviewView onDraw mPaused:"+mPaused);
 		if (mMovie != null) {
 			if (!mPaused) {
 				updateAnimationTime();

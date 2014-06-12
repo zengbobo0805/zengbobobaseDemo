@@ -19,11 +19,11 @@
 
         <com.zengbobobase.demo.view.GifMovieView
             android:id="@+id/gif1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
             android:onClick="onGifClick" />
 
-        <LinearLayout
+      <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onGifClick"
-                custom:gif="@drawable/gif_heart" />
+                custom:gif="@drawable/bg_btn" />
 
             <com.zengbobobase.demo.view.GifMovieView
                 android:layout_width="fill_parent"
@@ -42,20 +42,7 @@
                 android:onClick="onGifClick"
                 custom:gif="@drawable/gif_heart" />
 
-            <com.zengbobobase.demo.view.GifMovieView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onGifClick"
-                custom:gif="@drawable/gif_heart" />
-
-            <com.zengbobobase.demo.view.GifMovieView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onGifClick"
-                custom:gif="@drawable/gif_heart" />
-        </LinearLayout>
+        </LinearLayout> 
     </LinearLayout>
 
 </ScrollView>

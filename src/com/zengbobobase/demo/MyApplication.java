@@ -6,6 +6,7 @@ import android.app.Application;
 import android.content.Context;
 import android.widget.TextView;
 
+import com.baidu.frontia.FrontiaApplication;
 import com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -26,6 +27,7 @@ public class MyApplication extends Application {
 		instance = this;
 		new TextView(this);
 		init(getApplicationContext());
+		FrontiaApplication.initFrontiaApplication(getApplicationContext());
 	}
 	public void init(Context context) {
 		 config = new ImageLoaderConfiguration.Builder(

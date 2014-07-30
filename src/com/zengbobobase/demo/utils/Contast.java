@@ -7,4 +7,6 @@ public class Contast {
 	public static final int FAILURE_SIZE = 0x0004;
 	public static final int ERROR_SIZE = 0x0005;
 	public static final int TOAST_SIZE = 0x0006;
+	
+	public static final String BAIDU_TUISONG_APP_KEY ="oKmTU7OoXtZA5mypukHiRGvP";
 }

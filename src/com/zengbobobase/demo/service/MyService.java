@@ -8,7 +8,14 @@ public class MyService extends Service {
 
 	@Override
 	public IBinder onBind(Intent intent) {
+		System.out.println("MyService  onBind");
 		return null;
+	}
+
+	@Override
+	public boolean onUnbind(Intent intent) {
+		System.out.println("MyService  onUnbind");
+		return super.onUnbind(intent);
 	}
 
 	@Override
@@ -28,12 +35,16 @@ public class MyService extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		System.out.println("MyService  onStartCommand");
 		return super.onStartCommand(intent, flags, startId);
+//		return START_STICKY;
 	}
 
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		System.out.println("MyService  onDestroy");
+		System.out.println("MyService  onDestroy"); 
+		Intent localIntent = new Intent();
+        localIntent.setClass(this, MyService.class);  //销毁时重新启动Service
+        this.startService(localIntent);
 	}
 
 }

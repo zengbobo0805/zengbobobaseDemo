@@ -21,4 +21,13 @@
     <color name="transparent">#00000000</color>
     <color name="text_num_gray">#333</color>
     <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff75a6ff</color>
+    <color name="translucence">#ff4e4752</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_f35636">#f35636</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_5d5c5c">#5d5c5c</color>
 </resources> 

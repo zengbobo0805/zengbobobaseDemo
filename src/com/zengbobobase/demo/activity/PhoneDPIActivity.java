@@ -1,7 +1,9 @@
 package com.zengbobobase.demo.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.widget.TextView;
 
@@ -22,9 +24,15 @@ public class PhoneDPIActivity extends Activity {
 		buf.append("dm.scaledDensity:"+dm.scaledDensity+"\n");
 		buf.append("dm.xdpi:"+dm.xdpi+"\n");
 		buf.append("dm.ydpi:"+dm.ydpi+"\n");
+		buf.append("getImei:"+getImei(this)+"\n");
+		System.out.println("getImei:"+getImei(this));
 		tv.setText(buf.toString());
 		
 		setContentView(tv);
 	}
-
+	public static String getImei(Context context){
+			TelephonyManager telephonyManager = (TelephonyManager) context
+					.getSystemService(Context.TELEPHONY_SERVICE);
+		return  telephonyManager.getDeviceId();
+	}
 }

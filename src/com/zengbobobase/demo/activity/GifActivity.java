@@ -37,8 +37,8 @@ import com.zengbobobase.demo.utils.FileUtils;
 import com.zengbobobase.demo.view.GifMovieView;
 
 public class GifActivity extends Activity {
-//	private String path = "http://ww1.sinaimg.cn/bmiddle/56a92a6cjw1djwrliune3g.gif";
-	private String path="http://img1.xcarimg.com/b55/s1450/m_lw3tksgasy8111.JPG";
+	private String path = "http://ww1.sinaimg.cn/bmiddle/56a92a6cjw1djwrliune3g.gif";
+//	private String path="http://img1.xcarimg.com/b55/s1450/m_lw3tksgasy8111.JPG";
 	GifMovieView gif1;
 
 	@Override
@@ -72,20 +72,17 @@ public class GifActivity extends Activity {
 
 				System.out.println("GifActivity onLoadingComplete filePath:"
 						+ filePath);
-				InputStream is = null;
-				try {
-					is = new BufferedInputStream(new FileInputStream(new File(
-							filePath)), 16 * 1024);
-					is.mark(16 * 1024);
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				}
-				Movie movie = Movie.decodeStream(is);
-//				ImageView im = new ImageView(GifActivity.this);
-				
-//				Movie movie = Movie.decodeFile(filePath);这个报错
-				handler.sendMessage(handler.obtainMessage(0x0001, movie));
-
+//				InputStream is = null;
+//				try {
+//					is = new BufferedInputStream(new FileInputStream(new File(
+//							filePath)), 16 * 1024);
+//					is.mark(16 * 1024);
+//				} catch (FileNotFoundException e) {
+//					e.printStackTrace();
+//				}
+//				Movie movie = Movie.decodeStream(is);
+//				handler.sendMessage(handler.obtainMessage(0x0001, movie));
+				readGif(filePath, 0x0001);
 			}
 
 			@Override
@@ -97,6 +94,21 @@ public class GifActivity extends Activity {
 		});
 	}
 
+	private void readGif(String filePath, int what) {
+		byte[] buffer = new byte[1024];
+		int len;
+		try {
+			FileInputStream fis = new FileInputStream(new File(filePath));
+			ByteArrayOutputStream os = new ByteArrayOutputStream(1024);
+			while ((len = fis.read(buffer)) >= 0) {
+				os.write(buffer, 0, len);
+			}
+			byte[] array = os.toByteArray();
+			Movie movie = Movie.decodeByteArray(array, 0, array.length);
+			handler.sendMessage(handler.obtainMessage(what, movie));
+		} catch (java.io.IOException e) {
+		}
+	}
 	Handler handler = new Handler() {
 
 		@Override
@@ -104,9 +116,9 @@ public class GifActivity extends Activity {
 			super.handleMessage(msg);
 			if (msg.what == 0x0001) {
 				System.out.println("GifActivity handler handleMessage:");
-//				gif1.setMovie((Movie) msg.obj);
+				gif1.setMovie((Movie) msg.obj);
 //				gif1.setBackgroundResource(R.drawable.bg_btn);
-				gif1.setBackgroundDrawable(GifActivity.this.getResources().getDrawable(R.drawable.bg_btn));
+//				gif1.setBackgroundDrawable(GifActivity.this.getResources().getDrawable(R.drawable.bg_btn));
 			}
 		}
 

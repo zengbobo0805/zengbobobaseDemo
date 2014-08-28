@@ -1,0 +1,10 @@
+/***********************************************/
+	现在主要说一下eclipse中git无法push的问题： 
+	解决方法是在git base客户端中执行： 
+	git remote add origin https://code.csdn.net/yq81862/autocode.git 
+	git push -f 
+	之后，eclipse才能够进行push操作。 
+
+/***********************************************/
+
+

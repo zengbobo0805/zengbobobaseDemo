@@ -27,7 +27,7 @@ public class MyApplication extends Application {
 		instance = this;
 		new TextView(this);
 		init(getApplicationContext());
-		FrontiaApplication.initFrontiaApplication(getApplicationContext());
+//		FrontiaApplication.initFrontiaApplication(getApplicationContext());
 	}
 	public void init(Context context) {
 		 config = new ImageLoaderConfiguration.Builder(

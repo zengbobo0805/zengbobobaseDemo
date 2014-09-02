@@ -7,4 +7,22 @@
     <declare-styleable name="CustomTheme">
         <attr name="gifMoviewViewStyle" format="reference" />
     </declare-styleable>
+    <declare-styleable name="CustomTextview">
+        <attr name="titleSize" format="dimension" />
+        <attr name="priceSize" format="dimension" />
+        <attr name="qiSize" format="dimension" />
+        <attr name="danWeiSize" format="dimension" />
+        
+        <attr name="titleColor" format="color" />
+        <attr name="priceColor" format="color" />
+        <attr name="qiColor" format="color" />
+        <attr name="danWeiColor" format="color" />
+        
+        <attr name="title" format="string" />
+        <attr name="price" format="string" />
+        <attr name="priceDanWeiS" format="string" />
+        <attr name="priceQiS" format="string" />
+    </declare-styleable>
+    
+     <attr name="CustomizeStyle" format="reference" />
 </resources>

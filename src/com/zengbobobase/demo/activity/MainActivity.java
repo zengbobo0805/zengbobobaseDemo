@@ -104,10 +104,10 @@ public class MainActivity extends Activity {
 		// "api_key")
 		// 通过share preference实现的绑定标志开关，如果已经成功绑定，就取消这次绑定
 
-		PushManager
-				.startWork(this,
-						PushConstants.LOGIN_TYPE_API_KEY,
-						Contast.BAIDU_TUISONG_APP_KEY);
+//		PushManager
+//				.startWork(this,
+//						PushConstants.LOGIN_TYPE_API_KEY,
+//						Contast.BAIDU_TUISONG_APP_KEY);
 		// Push: 如果想基于地理位置推送，可以打开支持地理位置的推送的开关
 		// PushManager.enableLbs(getApplicationContext());
 

@@ -29,12 +29,14 @@
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
 
     <application
         android:name="com.zengbobobase.demo.MyApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name_title"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name="com.zengbobobase.demo.activity.MainActivity"
             android:label="@string/app_name_title" >
@@ -76,15 +78,18 @@
             android:name="com.zengbobobase.demo.activity.SinaActivity"
             android:label="新浪微博webview" >
         </activity>
-         <activity
+        <activity
             android:name="com.zengbobobase.demo.activity.GsonActivity"
             android:label="JSON测试" >
         </activity>
-           <activity
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestActivity"
+            android:label="测试TestActivity" >
+        </activity>
+        <activity
             android:name="com.zengbobobase.demo.activity.MyTextViewActivity"
             android:label="自定义textview--Android UI 之居间绘制文本内容的正确方法" >
         </activity>
-        
         <activity
             android:name="com.zengbobobase.demo.activity.SinaSDKActivity"
             android:label="调用新浪微博SDK,从第三方 应用 唤起 微博客户端" >
@@ -253,7 +258,8 @@
 
 
         <!-- push应用定义消息receiver声明 -->
-        <!-- <receiver android:name="com.zengbobobase.demo.receiver.MyPushMessageReceiver" >
+        <!--
+        <receiver android:name="com.zengbobobase.demo.receiver.MyPushMessageReceiver" >
             <intent-filter>
 
                 接收push消息
@@ -262,10 +268,13 @@
                 <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
                 <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
             </intent-filter>
-        </receiver> -->
+        </receiver>
+        -->
+
 
         <!-- push必须的receviver和service声明 -->
-        <!-- <receiver
+        <!--
+        <receiver
             android:name="com.baidu.android.pushservice.PushServiceReceiver"
             android:process=":bdservice_v1" >
             <intent-filter>
@@ -274,7 +283,8 @@
                 <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
                 <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
             </intent-filter>
-        </receiver> -->
+        </receiver>
+        -->
         <receiver
             android:name="com.baidu.android.pushservice.RegistrationReceiver"
             android:process=":bdservice_v1" >
@@ -288,7 +298,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-<!-- 
+        <!--
         <service
             android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
@@ -296,7 +306,8 @@
             <intent-filter>
                 <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
             </intent-filter>
-        </service> -->
+        </service>
+        -->
         <!-- push结束 -->
 
         <receiver android:name="com.zengbobobase.demo.receiver.BootBroastReceiver" >

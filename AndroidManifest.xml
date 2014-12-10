@@ -46,6 +46,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.zengbobobase.demo.activity.SQliteDBActivity"
+            android:label="SQliteDBActivity数据库测试" >
+        </activity>
+          <activity
+            android:name="com.zengbobobase.demo.activity.SqliteThreadActivity"
+            android:label="SqliteThreadActivity数据库测试" >
+        </activity>
+        
         <activity
             android:name="com.zengbobobase.demo.activity.TestAndroidActivity"
             android:label="TestAndroidActivity" >
@@ -86,6 +95,23 @@
             android:name="com.zengbobobase.demo.activity.TestActivity"
             android:label="测试TestActivity" >
         </activity>
+        
+           <activity
+            android:name="com.zengbobobase.demo.activity.PaintAndPathActivity"
+            android:label="绘制几何图形PaintAndPathActivity" >
+        </activity>
+        
+             <activity
+            android:name="com.zengbobobase.demo.activity.PainMatrixActivity"
+            android:label="图形特效，使用Matrix实现旋转、缩放和平移PainMatrixActivity" >
+        </activity>
+        
+             
+             <activity
+            android:name="com.zengbobobase.demo.activity.PainShaderActivity"
+            android:label="图形特效，使用Shader类渲染图形PainShaderActivity" >
+        </activity>
+        
         <activity
             android:name="com.zengbobobase.demo.activity.MyTextViewActivity"
             android:label="自定义textview--Android UI 之居间绘制文本内容的正确方法" >
@@ -174,10 +200,23 @@
                 <data android:scheme="LvmmLogin" />
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.zengbobobase.demo.activity.MyScrollerActivity"
+            android:label="MyScrollerActivity" >
+        </activity>
         <activity
             android:name="com.zengbobobase.demo.activity.MD5Activity"
             android:label="得到任意apk公钥信息的md5字符串" >
         </activity>
+           <activity
+            android:name="com.zengbobobase.demo.activity.TextColorActivity"
+            android:label="TextColorActivity颜色值" >
+        </activity>
+          <activity
+            android:name="com.zengbobobase.demo.activity.ListViewItemGridActivity"
+            android:label="ListViewItemGridActivity" >
+        </activity>
+        
         <activity
             android:name="com.zengbobobase.demo.activity.BitmapShadersActivity"
             android:label="BitmapShaders构造渲染器" >

@@ -30,4 +30,17 @@
     <color name="color_333333">#333333</color>
     <color name="color_999999">#999999</color>
     <color name="color_5d5c5c">#5d5c5c</color>
+    
+    
+    <color name="color_c00000">#c01111</color>
+    <color name="color_c10000">#c15500</color>
+    <color name="color_c20000">#c20055</color>
+    <color name="color_c30000">#c30550</color>
+    <color name="color_c40000">#c400ff</color>
+    <color name="color_c50000">#f50000</color>
+    <color name="color_c60000">#c6f000</color>
+    <color name="color_c70000">#c70000</color>
+    <color name="color_c80000">#c80000</color>
+    <color name="color_c90000">#c90000</color>
+    <color name="color_ca0000">#ca0000</color>
 </resources> 

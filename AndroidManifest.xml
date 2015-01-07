@@ -91,6 +91,13 @@
             android:name="com.zengbobobase.demo.activity.GsonActivity"
             android:label="JSON测试" >
         </activity>
+        
+        <activity
+            android:name="com.zengbobobase.demo.activity.GsonParseOrToJsonActivity"
+            android:label="GsonParseOrToJsonActivity,JSON测试" >
+        </activity>
+        
+        
         <activity
             android:name="com.zengbobobase.demo.activity.TestActivity"
             android:label="测试TestActivity" >
@@ -253,6 +260,12 @@
             android:name="com.zengbobobase.demo.activity.EditTextActivity"
             android:label="EditText属性测试" >
         </activity>
+        
+        <activity
+            android:name="com.zengbobobase.demo.activity.EditNotesActivity"
+            android:label="EditNotesActivity" >
+        </activity>
+        
         <activity
             android:name="com.zengbobobase.demo.activity.RatingBarActivity"
             android:label="RatingBar" >
@@ -360,6 +373,8 @@
         <meta-data
             android:name="api_key"
             android:value="oKmTU7OoXtZA5mypukHiRGvP" />
+        
+       <!--高德地图key  a0ecf52574c88f8c4433cf52469138cc -->
     </application>
 
 </manifest>

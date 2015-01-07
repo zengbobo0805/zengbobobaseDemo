@@ -68,18 +68,22 @@ public class ExpandableListViewActivity extends Activity {
 			}
 		});
 	
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 100000; i++) {
+			System.out
+			.println("ExpandableListViewActivity onCreate  i:"+i);
 			adapter.getGroup().add(i + "-----");
 			List<String> list = new ArrayList<String>();
-			for (int j = 0; j < 3; j++) {
+			for (int j = 0; j < 1; j++) {
 				list.add(i + "----" + j);
 			}
 			adapter.getChild().add(list);
-		}
-		for (int i = 0; i < adapter.getGroupCount(); i++) {
-			expandableListView.expandGroup(i);
 
+			expandableListView.expandGroup(i);
 		}
+//		for (int i = 0; i < adapter.getGroupCount(); i++) {
+//			expandableListView.expandGroup(i);
+//
+//		}
 		adapter.notifyDataSetChanged();
 
 	}

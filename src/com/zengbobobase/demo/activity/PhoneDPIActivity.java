@@ -2,6 +2,7 @@ package com.zengbobobase.demo.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
@@ -25,6 +26,9 @@ public class PhoneDPIActivity extends Activity {
 		buf.append("dm.xdpi:"+dm.xdpi+"\n");
 		buf.append("dm.ydpi:"+dm.ydpi+"\n");
 		buf.append("getImei:"+getImei(this)+"\n");
+		buf.append("手机型号: " + android.os.Build.MODEL + ",\nSDK版本:"   
+                + android.os.Build.VERSION.SDK + ",\n系统版本:"   
+                + android.os.Build.VERSION.RELEASE); 
 		System.out.println("getImei:"+getImei(this));
 		tv.setText(buf.toString());
 		

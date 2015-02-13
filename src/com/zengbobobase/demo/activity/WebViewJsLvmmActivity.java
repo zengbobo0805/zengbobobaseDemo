@@ -1,6 +1,10 @@
 package com.zengbobobase.demo.activity;
 
 import com.zengbobo.android.utils.StringUtil;
+import com.zengbobobase.demo.model.BaseRichUrlModel;
+import com.zengbobobase.demo.model.ResizeHeightModel;
+import com.zengbobobase.demo.utils.DisplayUtil;
+import com.zengbobobase.demo.utils.JsonUtil;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -8,6 +12,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
@@ -41,11 +46,25 @@ public class WebViewJsLvmmActivity extends Activity {
 					intent.setData(Uri.parse(url));
 					startActivityForResult(intent, 0);
 				}else{
-					view.loadUrl(url);
+//					view.loadUrl(url);
 //					Intent intent_1 = new Intent();
 					
 				}
-
+		
+				if(url.toLowerCase().contains(BaseRichUrlModel.BASE_RICH_URL_RESIZE_HEIGHT)){
+					String json = url
+							.substring(BaseRichUrlModel.BASE_RICH_URL_HOST
+									.length());
+				
+					ResizeHeightModel resizeHeightModel = JsonUtil.parseJson(json, ResizeHeightModel.class);
+					int dpXHeight = DisplayUtil.dip2px(WebViewJsLvmmActivity.this, resizeHeightModel.getHeight());
+					if (DisplayUtil.dip2px(WebViewJsLvmmActivity.this, 200) < dpXHeight) {
+						android.view.ViewGroup.LayoutParams params = view.getLayoutParams();
+						params.height = dpXHeight;
+						System.out.println("dsfsdfsdf dpXHeight:"+dpXHeight);
+						view.requestLayout();
+					}
+				}
 				return true;
 			}
 
@@ -67,7 +86,8 @@ public class WebViewJsLvmmActivity extends Activity {
 
 		});
 //		webView.loadUrl("http://m.lvmama.com/static/demo/loginClient.html");
-		webView.loadUrl("file:///android_asset/webview_js_lvmm.html");
+//		webView.loadUrl("file:///android_asset/webview_js_lvmm.html");
+		webView.loadUrl("http://192.168.82.115/square-item-show?userId=8&id=852c3d8d3bfc4f678214931ab6081e2f");
 	}
 
 

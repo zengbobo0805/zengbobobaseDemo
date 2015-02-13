@@ -27,24 +27,27 @@ public class WebViewJsNewActivity extends Activity {
 		webView.addJavascriptInterface(new TestJs(), "javatojs");// 把RIAExample的一个实例添加到js的全局对象window中，
 		// //这样就可以使用window.javatojs来调用它的方法
 
-		webView.setWebViewClient(new WebViewClient() {
-
-			@Override
-			public void onPageFinished(WebView view, String url) {
-				super.onPageFinished(view, url);
-				System.out.println("WebViewJsNewActivity onPageFinished url:"
-						+ url);
-				mHandler.post(new Runnable() {
-					@Override
-					public void run() {
-						webView.loadUrl("javascript:getList(10)");
-					}
-				});
-
-			}
-
-		});
-		webView.loadUrl("file:///android_asset/webview_js_new.html");// 加载网页
+//		webView.setWebViewClient(new WebViewClient() {
+//
+//			@Override
+//			public void onPageFinished(WebView view, String url) {
+//				super.onPageFinished(view, url);
+//				System.out.println("WebViewJsNewActivity onPageFinished url:"
+//						+ url);
+//				mHandler.post(new Runnable() {
+//					@Override
+//					public void run() {
+//						webView.loadUrl("javascript:getList(10)");
+//					}
+//				});
+//
+//			}
+//
+//		});
+//		webView.loadUrl("file:///android_asset/webview_js_new.html");// 加载网页
+		webView.loadUrl("file:///android_asset/uedit_demo.html");// 加载网页
+		
+		
 
 	}
 

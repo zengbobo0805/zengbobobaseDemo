@@ -31,6 +31,18 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
 
+    <!-- CrossWalk -->
+<!--     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+
+
     <application
         android:name="com.zengbobobase.demo.MyApplication"
         android:icon="@drawable/ic_launcher"
@@ -102,6 +114,10 @@
             android:name="com.zengbobobase.demo.activity.TestActivity"
             android:label="测试TestActivity" >
         </activity>
+              <activity
+            android:name="com.zengbobobase.demo.activity.Experiment_ac_Demo"
+            android:label="波形图的绘制Experiment_ac_Demo" >
+        </activity>
         
            <activity
             android:name="com.zengbobobase.demo.activity.PaintAndPathActivity"
@@ -171,9 +187,46 @@
             android:exported="true"
             android:label="微信WXEntryActivity" >
         </activity>
+        
+               <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="com.flavienlaurent.activityanimation.app.SecondActivity">
+        </activity>
+        <activity
+            android:name=".DoorActivity"
+            android:label="com.flavienlaurent.activityanimation.app.DoorActivity">
+        </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="com.flavienlaurent.activityanimation.app.ThirdActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
         <activity
             android:name="com.zengbobobase.demo.activity.MergeActivity"
             android:label="MergeActivity" >
+        </activity>
+        
+          <activity
+            android:name="com.zengbobobase.demo.activity.CrossWalkActivity"
+            android:hardwareAccelerated="true"
+            android:label="CrossWalkActivity" >
+        </activity>
+         <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsRouDongActivity"
+            android:label="WebViewJsRouDongActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsRichTextActivity"
+            android:label="WebViewJsRichTextActivity" >
         </activity>
         <activity
             android:name="com.zengbobobase.demo.activity.WebViewJsActivity"
@@ -277,7 +330,7 @@
             android:process=":zengbobo_push" >
         </service>
 
-        <activity
+     <!--    <activity
             android:name="com.baidu.push.example.PushDemoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -292,10 +345,10 @@
             android:name="com.baidu.push.example.CustomActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask" >
-        </activity>
+        </activity> -->
 
         <!-- push富媒体，不使用富媒体推送不需要 -->
-        <activity
+ <!--        <activity
             android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="MediaViewActivity" >
@@ -305,7 +358,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="MediaListActivity"
             android:launchMode="singleTask" >
-        </activity>
+        </activity> -->
         <!-- push富媒体结束 -->
 
 
@@ -337,7 +390,7 @@
             </intent-filter>
         </receiver>
         -->
-        <receiver
+      <!--   <receiver
             android:name="com.baidu.android.pushservice.RegistrationReceiver"
             android:process=":bdservice_v1" >
             <intent-filter>
@@ -349,7 +402,7 @@
 
                 <data android:scheme="package" />
             </intent-filter>
-        </receiver>
+        </receiver> -->
         <!--
         <service
             android:name="com.baidu.android.pushservice.PushService"
@@ -362,12 +415,12 @@
         -->
         <!-- push结束 -->
 
-        <receiver android:name="com.zengbobobase.demo.receiver.BootBroastReceiver" >
+  <!--       <receiver android:name="com.zengbobobase.demo.receiver.BootBroastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
-        </receiver>
+        </receiver> -->
 
         <!-- 在百度开发者中心查询应用的API Key oKmTU7OoXtZA5mypukHiRGvP -->
         <meta-data

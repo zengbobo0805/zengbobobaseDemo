@@ -42,107 +42,107 @@ public class Experiment_ac_Demo extends Activity implements Callback {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_experiment_demo_layout);
-		DisplayMetrics metrics = getResources().getDisplayMetrics();
-		surWidth = metrics.widthPixels;
-		surHeigth = metrics.heightPixels;
-		init_point();
-		initView();
+//		setContentView(R.layout.activity_experiment_demo_layout);
+//		DisplayMetrics metrics = getResources().getDisplayMetrics();
+//		surWidth = metrics.widthPixels;
+//		surHeigth = metrics.heightPixels;
+//		init_point();
+//		initView();
 	}
 
-	private void init_point() {
-		Li_point_x = 43;
-		light_x = 43;
-		Li_point_y = surHeigth / 4;
-		light_y = surHeigth / 4;
-	}
+//	private void init_point() {
+//		Li_point_x = 43;
+//		light_x = 43;
+//		Li_point_y = surHeigth / 4;
+//		light_y = surHeigth / 4;
+//	}
 
-	private void initView() {
-		surface = (SurfaceView) findViewById(R.id.ex_demo_sur);
-		mTextView = (TextView) findViewById(R.id.ex_demo_text);
-		mHolder = surface.getHolder();
-		// 设置表面视图放置在最顶部(即：没有一个窗口的内容本SurfaceView可见它的表面)
-		surface.setZOrderOnTop(true);
-		// 游戏框架的表面层设置格式为像素格式透明
-		surface.getHolder().setFormat(PixelFormat.TRANSPARENT);
-		mHolder.addCallback(this);
-	}
+//	private void initView() {
+//		surface = (SurfaceView) findViewById(R.id.ex_demo_sur);
+//		mTextView = (TextView) findViewById(R.id.ex_demo_text);
+//		mHolder = surface.getHolder();
+//		// 设置表面视图放置在最顶部(即：没有一个窗口的内容本SurfaceView可见它的表面)
+//		surface.setZOrderOnTop(true);
+//		// 游戏框架的表面层设置格式为像素格式透明
+//		surface.getHolder().setFormat(PixelFormat.TRANSPARENT);
+//		mHolder.addCallback(this);
+//	}
+//
+//	boolean judge = false;
+//	int time = 0;
+//
+//	@Override
+//	protected void onStart() {
+//		// TODO Auto-generated method stub
+//		mTimer = new Timer();
+//		mTask = new TimerTask() {
+//			@Override
+//			public void run() {
+//				// TODO Auto-generated method stub
+//				if (time % 2 == 0) {
+//					judge = true;
+//				} else {
+//					judge = false;
+//				}
+//				Message message = new Message();
+//				message.what = 1;
+//				if (mHandler != null) {
+//
+//					if (time % 2 == 0) {
+//						Li_point_y = surHeigth / 4 + 20;
+//						Li_point_x = Li_point_x + 3;
+//					} else if (time % 3 == 0) {
+//						Li_point_y = surHeigth / 4 - 10;
+//						Li_point_x = Li_point_x + 3;
+//					} else if (time % 5 == 0) {
+//						Li_point_y = surHeigth / 4 + 10;
+//						Li_point_x = Li_point_x + 3;
+//					} else {
+//						Li_point_y = surHeigth / 4 - 20;
+//						Li_point_x = Li_point_x + 3;
+//
+//					}
+//					if (mHandler != null) {
+//						mHandler.sendMessage(message);
+//					}
+//
+//				}
+//				time++;
+//			}
+//		};
 
-	boolean judge = false;
-	int time = 0;
-
-	@Override
-	protected void onStart() {
-		// TODO Auto-generated method stub
-		mTimer = new Timer();
-		mTask = new TimerTask() {
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				if (time % 2 == 0) {
-					judge = true;
-				} else {
-					judge = false;
-				}
-				Message message = new Message();
-				message.what = 1;
-				if (mHandler != null) {
-
-					if (time % 2 == 0) {
-						Li_point_y = surHeigth / 4 + 20;
-						Li_point_x = Li_point_x + 3;
-					} else if (time % 3 == 0) {
-						Li_point_y = surHeigth / 4 - 10;
-						Li_point_x = Li_point_x + 3;
-					} else if (time % 5 == 0) {
-						Li_point_y = surHeigth / 4 + 10;
-						Li_point_x = Li_point_x + 3;
-					} else {
-						Li_point_y = surHeigth / 4 - 20;
-						Li_point_x = Li_point_x + 3;
-
-					}
-					if (mHandler != null) {
-						mHandler.sendMessage(message);
-					}
-
-				}
-				time++;
-			}
-		};
-
-		mHandler = new Handler() {
-			@Override
-			public void handleMessage(Message msg) {
-				// TODO Auto-generated method stub
-				super.handleMessage(msg);
-				if (msg.what == 1) {
-					if (Li_point_x > surWidth) {
-						Canvas canvas = mHolder.lockCanvas();
-						if (canvas != null) {
-							// 清除画布
-							canvas.drawColor(Color.TRANSPARENT, Mode.CLEAR);
-							mHolder.unlockCanvasAndPost(canvas);
-							init_point();
-							DrawBack(mHolder);
-							Canvas canvas2 = mHolder.lockCanvas(new Rect(43,
-									60, (int) surWidth,
-									(int) surHeigth / 2 - 20));
-							canvas2.drawColor(Color.TRANSPARENT, Mode.CLEAR);
-							mHolder.unlockCanvasAndPost(canvas2);
-							time = 0;
-						}
-					}
-					/* clear(surCanvas); */
-					if (mHolder != null) {
-						DrawWave(mHolder);
-					}
-				}
-			}
-		};
-		mTimer.schedule(mTask, 100, 100);
-		super.onStart();
-	}
+//		mHandler = new Handler() {
+//			@Override
+//			public void handleMessage(Message msg) {
+//				// TODO Auto-generated method stub
+//				super.handleMessage(msg);
+//				if (msg.what == 1) {
+//					if (Li_point_x > surWidth) {
+//						Canvas canvas = mHolder.lockCanvas();
+//						if (canvas != null) {
+//							// 清除画布
+//							canvas.drawColor(Color.TRANSPARENT, Mode.CLEAR);
+//							mHolder.unlockCanvasAndPost(canvas);
+//							init_point();
+//							DrawBack(mHolder);
+//							Canvas canvas2 = mHolder.lockCanvas(new Rect(43,
+//									60, (int) surWidth,
+//									(int) surHeigth / 2 - 20));
+//							canvas2.drawColor(Color.TRANSPARENT, Mode.CLEAR);
+//							mHolder.unlockCanvasAndPost(canvas2);
+//							time = 0;
+//						}
+//					}
+//					/* clear(surCanvas); */
+//					if (mHolder != null) {
+//						DrawWave(mHolder);
+//					}
+//				}
+//			}
+//		};
+//		mTimer.schedule(mTask, 100, 100);
+//		super.onStart();
+//	}
 
 	private void DrawBack(SurfaceHolder holder) {
 

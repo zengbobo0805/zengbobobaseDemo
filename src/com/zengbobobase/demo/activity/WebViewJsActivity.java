@@ -1,18 +1,16 @@
 package com.zengbobobase.demo.activity;
 
-import com.zengbobo.android.utils.StringUtil;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.ViewGroup.LayoutParams;
-import android.webkit.JavascriptInterface;
-import android.webkit.WebView;
-import android.webkit.WebSettings.LayoutAlgorithm;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings.PluginState;
-import android.webkit.WebSettings.RenderPriority;
+import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.zengbobo.android.utils.StringUtil;
 
 @SuppressLint("JavascriptInterface")
 public class WebViewJsActivity extends Activity {
@@ -22,18 +20,34 @@ public class WebViewJsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		path = "file:///android_asset/webview_js.html";
+//		path = "file:///android_asset/webview_js.html";
+		path="http://mp.weixin.qq.com/s?__biz=MzA5ODE4NjU2Mw==&mid=233438399&idx=1&sn=fdd1fcc2b2a6c0aebf5fbf40975901c6#rd";
 		webView = new WebView(this);
 		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT);
 		setContentView(webView, params);
-		webView.getSettings().setRenderPriority(RenderPriority.HIGH);
-		webView.getSettings().setJavaScriptEnabled(true);
-		webView.getSettings().setUseWideViewPort(true);
-		webView.getSettings().setSupportZoom(true);
-		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.NARROW_COLUMNS);
+//		webView.getSettings().setRenderPriority(RenderPriority.HIGH);
+//		webView.getSettings().setJavaScriptEnabled(true);
+//		webView.getSettings().setUseWideViewPort(true);
+//		webView.getSettings().setSupportZoom(true);
+//		webView.getSettings().setPluginState(PluginState.ON);
+//		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.NARROW_COLUMNS);
+//
+//		webView.addJavascriptInterface(new MyJavascriptInterface(), "mytestjs");
 
-		webView.addJavascriptInterface(new MyJavascriptInterface(), "mytestjs");
+		
+		
+		webView.getSettings().setSupportZoom(true);
+		webView.getSettings().setSaveFormData(false);
+		webView.getSettings().setSavePassword(false);
+		webView.getSettings().setPluginState(PluginState.ON);
+		webView.getSettings().setUseWideViewPort(true);
+		webView.getSettings().setJavaScriptEnabled(true);
+		webView.getSettings().setBlockNetworkLoads(false);
+		webView.getSettings().setLoadWithOverviewMode(true);
+		webView.getSettings().setDatabaseEnabled(true); 
+		webView.getSettings().setDomStorageEnabled(true);
+		webView.setWebChromeClient(new WebChromeClient());
 		webView.setWebViewClient(new WebViewClient() {
 
 			@Override
@@ -74,18 +88,18 @@ public class WebViewJsActivity extends Activity {
 		webView.loadUrl(path);
 	}
 
-	public class MyJavascriptInterface {
-
-		@JavascriptInterface
-		public void getPassword() {
-			System.out.println("WebViewJsActivity getPassword ");
-			webView.loadUrl("javascript:getList()");
-		}
-
-		@JavascriptInterface
-		public void getPassword(String password) {
-			System.out.println("WebViewJsActivity getPassword(String  password):"+ password);
-		}
-	}
+//	public class MyJavascriptInterface {
+//
+//		@JavascriptInterface
+//		public void getPassword() {
+//			System.out.println("WebViewJsActivity getPassword ");
+//			webView.loadUrl("javascript:getList()");
+//		}
+//
+//		@JavascriptInterface
+//		public void getPassword(String password) {
+//			System.out.println("WebViewJsActivity getPassword(String  password):"+ password);
+//		}
+//	}
 
 }

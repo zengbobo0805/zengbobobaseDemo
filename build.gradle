@@ -1,0 +1,122 @@
+// 声明是Android程序
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    // 编译SDK的版本
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        // 应用的包名
+        applicationId "com.zengbobobase.demo"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 21
+        versionName "2.2.0"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+      //  manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+
+    signingConfigs {
+        debug {
+            // No debug config
+            //keyAlias "xrzgp"
+           // keyPassword "zhangchen31"
+           // storeFile file('./richeninfoKey_3x.3x')
+           // storePassword "zhangchen31"
+        }
+        release {
+           // storeFile file("./richeninfoKey_3x.3x")
+           // storePassword "zhangchen31"
+           // keyAlias "xrzgp"
+           // keyPassword "zhangchen31"
+        }
+    }
+
+
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            // 是否进行混淆
+            minifyEnabled false
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+        }
+    }
+
+    // 友盟多渠道打包
+    productFlavors {
+
+    }
+
+
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "Native_Libs2"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+    sourceSets {
+        main {
+//            jniLibs.srcDirs = ['jniLibs']
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src', 'universal-image-loader_src']
+            resources.srcDirs = ['src', 'universal-image-loader_src']
+            aidl.srcDirs = ['src', 'universal-image-loader_src']
+            renderscript.srcDirs = ['src', 'universal-image-loader_src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    // 编译libs目录下的所有jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':zengbobobase')
+    //     compile 'com.android.support:appcompat-v7:22.0.0'
+    //    compile files('libs/android-support-v4.jar')
+}

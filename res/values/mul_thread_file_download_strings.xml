@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">多线程断点下载器_欧阳鹏编写</string>
+    <string name="app_name_1">多线程断点下载器_欧阳鹏编写</string>
     <string name="path">下载路径</string>
     <string name="startbutton">开始下载</string>
     <string name="success">下载完成</string>

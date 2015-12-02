@@ -1,31 +1,30 @@
 package com.zengbobobase.demo.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.widget.ImageView;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
-import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.zengbobo.android.packageManager.ActivityInfoUtil;
 import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.adapter.MyBaseAdapter;
 import com.zengbobobase.demo.model.BaseModel;
-import com.zengbobobase.demo.receiver.PushDemoActivity;
-import com.zengbobobase.demo.receiver.Utils;
-import com.zengbobobase.demo.utils.Contast;
+import com.zengbobobase.demo.utils.Base64Utils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends Activity {
-	private ImageView img;
+//	private ImageView img;
+	private TextView tv;
 	private int count = 0;
 	private ListView listView;
 	private MyBaseAdapter adapter;
@@ -39,7 +38,24 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		img = (ImageView) findViewById(R.id.tv);
+//		img = (ImageView) findViewById(R.id.tv);
+		tv = (TextView) findViewById(R.id.tv);
+		tv.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				String str ="{\"data\":\"{\\\"columnId\\\":\\\"1\\\",\\\"id\\\":\\\"725346\\\"}\",\"id\":\"725346\",\"page\":\"info\",\"type\":\"1\"}";
+				String endcodeStr = Base64Utils.encodeToString(str);
+				System.out.println("MainActivity onCreate length:"+endcodeStr.length()+",endcodeStr:"+endcodeStr);
+//				Uri uri =Uri.parse("xrzgp://www.icaikee.com?"+endcodeStr);
+				Uri uri =Uri.parse("xrzgp://www.icaikee.com?eyJkYXRhIjoie1wiY29sdW1uSWRcIjpcIjFcIixcImlkXCI6XCI3MjUzNDZcIn0iLCJpZCI6IjcyNTM0NiIsInBhZ2UiOiJpbmZvIiwidHlwZSI6IjEifQ==");
+
+				intent.setData(uri);
+				startActivity(intent);
+			}
+		});
+
 		// bm = BitmapFactory.decodeResource(getResources(), R.drawable.big);
 		// img.setImageBitmap(bm);
 		listView = (ListView) findViewById(R.id.list);
@@ -115,6 +131,7 @@ public class MainActivity extends Activity {
 
 	private void saveHistoryInfo1(String... args) {
 		System.out.println("saveHistoryInfo1 args.length:" + args.length);
+
 	}
 
 	Handler handler = new Handler() {

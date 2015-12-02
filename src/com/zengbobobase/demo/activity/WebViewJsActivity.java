@@ -2,8 +2,11 @@ package com.zengbobobase.demo.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings.PluginState;
@@ -20,8 +23,10 @@ public class WebViewJsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		path = "file:///android_asset/webview_js.html";
-		path="http://mp.weixin.qq.com/s?__biz=MzA5ODE4NjU2Mw==&mid=233438399&idx=1&sn=fdd1fcc2b2a6c0aebf5fbf40975901c6#rd";
+		path = "file:///android_asset/webview_js.html";
+//		path="http://mp.weixin.qq.com/s?__biz=MzA5ODE4NjU2Mw==&mid=233438399&idx=1&sn=fdd1fcc2b2a6c0aebf5fbf40975901c6#rd";
+
+//		path="xrzgp://www.icaikee.com?data={\"id\":\"1\"}";
 		webView = new WebView(this);
 		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT);
@@ -52,7 +57,16 @@ public class WebViewJsActivity extends Activity {
 
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				view.loadUrl(url);
+
+				Log.i("zengbobo", "WebViewJsActivity shouldOverrideUrlLoading url:" + url);
+				if(url.startsWith("xrzgp")){
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					Uri uri =Uri.parse(url);
+					intent.setData(uri);
+					startActivity(intent);
+				}else{
+					view.loadUrl(url);
+				}
 				return true;
 			}
 

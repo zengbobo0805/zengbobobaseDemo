@@ -1,9 +1,31 @@
 package com.zengbobobase.demo.utils;
 
+import android.app.Activity;
 import android.content.Context;
+import android.util.DisplayMetrics;
 
 public class DisplayUtil {
+	private static int scrrentWidth = 0;
+	private static int scrrentHeight = 0;
 
+	public static int getScrentWidth(Context context) {
+		if (scrrentWidth <= 0) {
+			DisplayMetrics dm = new DisplayMetrics();
+			((Activity) context).getWindowManager().getDefaultDisplay()
+					.getMetrics(dm);
+			scrrentWidth = dm.widthPixels;
+		}
+		return scrrentWidth;
+	}
+	public static int getScrentHeight(Context context) {
+		if (scrrentHeight <= 0) {
+			DisplayMetrics dm = new DisplayMetrics();
+			((Activity) context).getWindowManager().getDefaultDisplay()
+					.getMetrics(dm);
+			scrrentHeight = dm.heightPixels;
+		}
+		return scrrentHeight;
+	}
 	/**
 	 * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
 	 */

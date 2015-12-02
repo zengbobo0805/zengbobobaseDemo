@@ -326,6 +326,15 @@
             android:label="RatingBar">
         </activity>
 
+        <!--视频-->
+        <activity
+            android:name="com.zengbobobase.demo.activity.VideoActivity"
+            android:label="VideoActivity">
+        </activity>
+
+
+
+
         <service
             android:name="com.zengbobobase.demo.service.MyService"
             android:priority="1000"

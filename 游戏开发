@@ -1,0 +1,8 @@
+open GLES
+opgles
+
+动画有别的处理，要看美术使用的技术
+比如我们2D 游戏用的是 spine
+
+
+现在做手游都基于引擎做，unity ，cocos

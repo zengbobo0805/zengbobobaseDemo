@@ -1,0 +1,14 @@
+1，系统基本信息 ，包括 内存，CPU ，进程队列 ，虚拟内存 ， 垃圾回收等信息 。
+　a、cat /proc/meminfo 显示基本的内存信息
+        ------ MEMORY INFO (/proc/meminfo) ------
+        ------ CPU INFO (top -n 1 -d 1 -m 30 -t) ------
+        ------ PROCRANK (procrank) ------
+        ------ VIRTUAL MEMORY STATS (/proc/vmstat) ------
+        ------ VMALLOC INFO (/proc/vmallocinfo) ------
+
+什么时候会有Log文件的产生 ？
+Log的产生大家都知道 ， 大家也都知道通过DDMS来看log ， 但什么时候会产生log文件呢 ？一般在如下几种情况会产生log文件 。
+1，程序异常退出 ， uncaused exception
+2，程序强制关闭 ，Force Closed (简称FC)
+3，程序无响应 ， Application No Response （简称ANR) ， 顺便，一般主线程超过5秒么有处理就会ANR
+4，手动生成 。

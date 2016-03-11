@@ -1,11 +1,11 @@
 package com.zengbobobase.demo.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.WebChromeClient;
@@ -16,14 +16,15 @@ import android.webkit.WebViewClient;
 import com.zengbobo.android.utils.StringUtil;
 
 @SuppressLint("JavascriptInterface")
-public class WebViewJsActivity extends Activity {
+public class WebViewJsActivity extends FragmentActivity {
 	private WebView webView;
 	private String path = "";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		path = "file:///android_asset/webview_js.html";
+//		path = "file:///android_asset/webview_js.html";
+		path="http://minfo.gildata.com/mobileF10View/f10.html?s=002711&p=HSJY_1008&u=54f955e8-9f0a-4468-a8c3-cbd1c69a5b75&t=red&v=1.0&n=1450749986759";
 //		path="http://mp.weixin.qq.com/s?__biz=MzA5ODE4NjU2Mw==&mid=233438399&idx=1&sn=fdd1fcc2b2a6c0aebf5fbf40975901c6#rd";
 
 //		path="xrzgp://www.icaikee.com?data={\"id\":\"1\"}";
@@ -59,6 +60,9 @@ public class WebViewJsActivity extends Activity {
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
 				Log.i("zengbobo", "WebViewJsActivity shouldOverrideUrlLoading url:" + url);
+				if(StringUtil.equalsNullOrEmpty(url)||url.toLowerCase().startsWith("android")){
+					return true;
+				}
 				if(url.startsWith("xrzgp")){
 					Intent intent = new Intent(Intent.ACTION_VIEW);
 					Uri uri =Uri.parse(url);
@@ -72,30 +76,37 @@ public class WebViewJsActivity extends Activity {
 
 			@Override
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
-				super.onPageStarted(view, url, favicon);
 				System.out
 						.println("WebViewJsActivity onPageStarted url:" + url);
+				if(StringUtil.equalsNullOrEmpty(url)||url.toLowerCase().startsWith("android")){
+					return ;
+				}
+				super.onPageStarted(view, url, favicon);
 
 			}
 
 			@Override
 			public void onPageFinished(WebView view, String url) {
-				super.onPageFinished(view, url);
 				System.out.println("WebViewJsActivity onPageFinished url:"
-						+ url);
+					+ url);
 				System.out.println("WebViewJsActivity onPageFinished path:"
 						+ path);
 				System.out
 						.println("WebViewJsActivity onPageFinished url.equals(path):"
 								+ (url.equals(path)));
-				if (!StringUtil.equalsNullOrEmpty(path) && url.equals(path)) {
-					// 要注入的js
-					System.out
-							.println("WebViewJsActivity onPageFinished ......:");
-					String js = "document.forms[0].onsubmit=function(event){var pwd = document.forms[0].getElementById(\"ptlogin-password\").value;window.mytestjs.getPassword(pwd);return false;}";
-
-//					view.loadUrl("javascript:" + js);
+				if(StringUtil.equalsNullOrEmpty(url)||url.toLowerCase().startsWith("android")){
+					return ;
 				}
+				super.onPageFinished(view, url);
+
+//				if (!StringUtil.equalsNullOrEmpty(path) && url.equals(path)) {
+//					// 要注入的js
+//					System.out
+//							.println("WebViewJsActivity onPageFinished ......:");
+//					String js = "document.forms[0].onsubmit=function(event){var pwd = document.forms[0].getElementById(\"ptlogin-password\").value;window.mytestjs.getPassword(pwd);return false;}";
+//
+////					view.loadUrl("javascript:" + js);
+//				}
 			}
 
 		});

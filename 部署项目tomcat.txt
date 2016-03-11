@@ -1,0 +1,35 @@
+http://www.2cto.com/os/201303/198392.html
+1.首先，进入Tomcat下的bin目录
+ 		cd /usr/local/tomcat/bin
+ 		
+2.使用Tomcat关闭命令
+ 		./shutdown.sh
+ 		
+3.查看Tomcat是否以关闭
+		ps -ef|grep java
+		如果显示以下相似信息，说明Tomcat还没有关闭
+		root      7010     1  0 Apr19 ?        00:30:13 
+		/usr/local/java/bin/java 
+		 -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+		 -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server 
+		 -Xms1024m -Xmx1024m -XX:NewSize=256m -XX:MaxNewSize=256m 
+		 -XX:PermSize=256m -XX:MaxPermSize=256m -XX:+DisableExplicitGC 
+		 -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager 
+		 -Djava.endorsed.dirs=/usr/local/tomcat/endorsed -classpath 
+		 /usr/local/tomcat/bin/bootstrap.jar -Dcatalina.base=/usr/local/tomcat -
+		 Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/usr/local/tomcat/temp 
+		 org.apache.catalina.startup.Bootstrap start
+ 
+ 
+4.如果你想直接干掉Tomcat，你可以使用kill命令，直接杀死Tomcat进程
+ 		kill -9 7010
+ 		
+5.然后继续查看Tomcat是否关闭
+		ps -ef|grep java
+		如果出现以下信息，则表示Tomcat已经关闭
+ 		root      7010     1  0 Apr19 ?        00:30:30 [java] <defunct>
+ 		
+7.最后，启动Tomcat
+		./startup.sh 		
+ 		
+ 		

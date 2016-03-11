@@ -22,7 +22,7 @@ android {
     defaultConfig {
         // 应用的包名
         applicationId "com.zengbobobase.demo"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 21
         versionName "2.2.0"

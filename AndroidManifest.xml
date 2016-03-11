@@ -326,6 +326,11 @@
             android:label="RatingBar">
         </activity>
 
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestPathEffectActivity"
+            android:label="RatingBar">
+        </activity>
+
         <!--视频-->
         <activity
             android:name="com.zengbobobase.demo.activity.VideoActivity"

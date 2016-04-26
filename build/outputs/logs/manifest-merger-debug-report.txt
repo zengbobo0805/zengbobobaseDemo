@@ -1,0 +1,490 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:tools
+		ADDED from AndroidManifest.xml:3:11
+	xmlns:android
+		ADDED from AndroidManifest.xml:5:11
+	tools:replace
+		ADDED from AndroidManifest.xml:4:11
+	package
+		ADDED from AndroidManifest.xml:2:11
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:7:11
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		ADDED from AndroidManifest.xml:6:11
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:9:5
+MERGED from com.android.support:multidex:1.0.1:18:5
+MERGED from xrz_application:zengbobobase:unspecified:7:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:11:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:10:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.GET_PACKAGE_SIZE
+ADDED from AndroidManifest.xml:14:5
+MERGED from xrz_application:zengbobobase:unspecified:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:20:5
+MERGED from xrz_application:zengbobobase:unspecified:11:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from AndroidManifest.xml:29:5
+	android:name
+		ADDED from AndroidManifest.xml:29:22
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from AndroidManifest.xml:30:5
+	android:name
+		ADDED from AndroidManifest.xml:30:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:31:5
+	android:name
+		ADDED from AndroidManifest.xml:31:22
+uses-permission#android.permission.RUN_INSTRUMENTATION
+ADDED from AndroidManifest.xml:32:5
+	android:name
+		ADDED from AndroidManifest.xml:32:22
+application
+ADDED from AndroidManifest.xml:46:5
+MERGED from xrz_application:zengbobobase:unspecified:16:5
+	android:allowBackup
+		ADDED from xrz_application:zengbobobase:unspecified:18:9
+	android:label
+		ADDED from AndroidManifest.xml:50:9
+		REJECTED from xrz_application:zengbobobase:unspecified:20:9
+	android:icon
+		ADDED from AndroidManifest.xml:49:9
+		REJECTED from xrz_application:zengbobobase:unspecified:19:9
+	android:theme
+		ADDED from AndroidManifest.xml:51:9
+		REJECTED from xrz_application:zengbobobase:unspecified:21:9
+	tools:replace
+		ADDED from AndroidManifest.xml:48:9
+	android:name
+		ADDED from AndroidManifest.xml:47:9
+		REJECTED from xrz_application:zengbobobase:unspecified:17:9
+activity#com.zengbobobase.demo.activity.MainActivity
+ADDED from AndroidManifest.xml:53:9
+	android:label
+		ADDED from AndroidManifest.xml:55:13
+	android:name
+		ADDED from AndroidManifest.xml:54:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:56:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:57:17
+	android:name
+		ADDED from AndroidManifest.xml:57:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:59:17
+	android:name
+		ADDED from AndroidManifest.xml:59:27
+activity#com.zengbobobase.demo.activity.SQliteDBActivity
+ADDED from AndroidManifest.xml:62:9
+	android:label
+		ADDED from AndroidManifest.xml:64:13
+	android:name
+		ADDED from AndroidManifest.xml:63:13
+activity#com.zengbobobase.demo.activity.SqliteThreadActivity
+ADDED from AndroidManifest.xml:66:9
+	android:label
+		ADDED from AndroidManifest.xml:68:13
+	android:name
+		ADDED from AndroidManifest.xml:67:13
+activity#com.zengbobobase.demo.activity.TestAndroidActivity
+ADDED from AndroidManifest.xml:71:9
+	android:label
+		ADDED from AndroidManifest.xml:73:13
+	android:name
+		ADDED from AndroidManifest.xml:72:13
+activity#com.zengbobobase.demo.activity.FirstActivity
+ADDED from AndroidManifest.xml:75:9
+	android:label
+		ADDED from AndroidManifest.xml:77:13
+	android:name
+		ADDED from AndroidManifest.xml:76:13
+activity#com.zengbobobase.demo.activity.HandlerUIActivity
+ADDED from AndroidManifest.xml:83:9
+	android:label
+		ADDED from AndroidManifest.xml:85:13
+	android:name
+		ADDED from AndroidManifest.xml:84:13
+activity#com.zengbobobase.demo.activity.MulThreadDownLoadFileActivity
+ADDED from AndroidManifest.xml:87:9
+	android:label
+		ADDED from AndroidManifest.xml:89:13
+	android:name
+		ADDED from AndroidManifest.xml:88:13
+activity#com.zengbobobase.demo.activity.PrintActivity
+ADDED from AndroidManifest.xml:91:9
+	android:label
+		ADDED from AndroidManifest.xml:93:13
+	android:name
+		ADDED from AndroidManifest.xml:92:13
+activity#com.zengbobobase.demo.receiver.PushDemoActivity
+ADDED from AndroidManifest.xml:95:9
+	android:label
+		ADDED from AndroidManifest.xml:97:13
+	android:name
+		ADDED from AndroidManifest.xml:96:13
+activity#com.zengbobobase.demo.activity.SinaActivity
+ADDED from AndroidManifest.xml:99:9
+	android:label
+		ADDED from AndroidManifest.xml:101:13
+	android:name
+		ADDED from AndroidManifest.xml:100:13
+activity#com.zengbobobase.demo.activity.GsonActivity
+ADDED from AndroidManifest.xml:103:9
+	android:label
+		ADDED from AndroidManifest.xml:105:13
+	android:name
+		ADDED from AndroidManifest.xml:104:13
+activity#com.zengbobobase.demo.activity.GsonParseOrToJsonActivity
+ADDED from AndroidManifest.xml:108:9
+	android:label
+		ADDED from AndroidManifest.xml:110:13
+	android:name
+		ADDED from AndroidManifest.xml:109:13
+activity#com.zengbobobase.demo.activity.TestActivity
+ADDED from AndroidManifest.xml:114:9
+	android:label
+		ADDED from AndroidManifest.xml:116:13
+	android:name
+		ADDED from AndroidManifest.xml:115:13
+activity#com.zengbobobase.demo.activity.Experiment_ac_Demo
+ADDED from AndroidManifest.xml:118:9
+	android:label
+		ADDED from AndroidManifest.xml:120:13
+	android:name
+		ADDED from AndroidManifest.xml:119:13
+activity#com.zengbobobase.demo.activity.PaintAndPathActivity
+ADDED from AndroidManifest.xml:123:9
+	android:label
+		ADDED from AndroidManifest.xml:125:13
+	android:name
+		ADDED from AndroidManifest.xml:124:13
+activity#com.zengbobobase.demo.activity.PainMatrixActivity
+ADDED from AndroidManifest.xml:128:9
+	android:label
+		ADDED from AndroidManifest.xml:130:13
+	android:name
+		ADDED from AndroidManifest.xml:129:13
+activity#com.zengbobobase.demo.activity.PainShaderActivity
+ADDED from AndroidManifest.xml:134:9
+	android:label
+		ADDED from AndroidManifest.xml:136:13
+	android:name
+		ADDED from AndroidManifest.xml:135:13
+activity#com.zengbobobase.demo.activity.MyTextViewActivity
+ADDED from AndroidManifest.xml:139:9
+	android:label
+		ADDED from AndroidManifest.xml:141:13
+	android:name
+		ADDED from AndroidManifest.xml:140:13
+activity#com.zengbobobase.demo.activity.SinaSDKActivity
+ADDED from AndroidManifest.xml:143:9
+	android:label
+		ADDED from AndroidManifest.xml:145:13
+	android:name
+		ADDED from AndroidManifest.xml:144:13
+intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from AndroidManifest.xml:146:13
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from AndroidManifest.xml:147:17
+	android:name
+		ADDED from AndroidManifest.xml:147:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:149:17
+	android:name
+		ADDED from AndroidManifest.xml:149:27
+activity#com.tencent.tauth.AuthActivity
+ADDED from AndroidManifest.xml:156:9
+	android:noHistory
+		ADDED from AndroidManifest.xml:160:13
+	android:label
+		ADDED from AndroidManifest.xml:158:13
+	android:name
+		ADDED from AndroidManifest.xml:157:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:159:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:161:13
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:162:17
+	android:name
+		ADDED from AndroidManifest.xml:162:25
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:165:17
+	android:name
+		ADDED from AndroidManifest.xml:165:27
+data
+ADDED from AndroidManifest.xml:167:17
+	android:scheme
+		ADDED from AndroidManifest.xml:167:23
+activity#com.tencent.connect.common.AssistActivity
+ADDED from AndroidManifest.xml:170:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:174:13
+	android:label
+		ADDED from AndroidManifest.xml:173:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:172:13
+	android:theme
+		ADDED from AndroidManifest.xml:175:13
+	android:name
+		ADDED from AndroidManifest.xml:171:13
+activity#com.zengbobobase.demo.tencent.my.TencentActivity
+ADDED from AndroidManifest.xml:176:9
+	android:label
+		ADDED from AndroidManifest.xml:179:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:178:13
+	android:name
+		ADDED from AndroidManifest.xml:177:13
+activity#com.zengbobobase.demo.activity.ApplicationTotalActivity
+ADDED from AndroidManifest.xml:181:9
+	android:label
+		ADDED from AndroidManifest.xml:184:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:183:13
+	android:name
+		ADDED from AndroidManifest.xml:182:13
+activity#com.zengbobobase.demo.activity.MergeActivity
+ADDED from AndroidManifest.xml:214:9
+	android:label
+		ADDED from AndroidManifest.xml:216:13
+	android:name
+		ADDED from AndroidManifest.xml:215:13
+activity#com.zengbobobase.demo.activity.WebViewJsRouDongActivity
+ADDED from AndroidManifest.xml:224:9
+	android:label
+		ADDED from AndroidManifest.xml:226:13
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+activity#com.zengbobobase.demo.activity.WebViewJsRichTextActivity
+ADDED from AndroidManifest.xml:228:9
+	android:label
+		ADDED from AndroidManifest.xml:230:13
+	android:name
+		ADDED from AndroidManifest.xml:229:13
+activity#com.zengbobobase.demo.activity.WebViewJsActivity
+ADDED from AndroidManifest.xml:232:9
+	android:label
+		ADDED from AndroidManifest.xml:235:13
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:234:13
+	android:name
+		ADDED from AndroidManifest.xml:233:13
+activity#com.zengbobobase.demo.activity.WebViewJsNewActivity
+ADDED from AndroidManifest.xml:237:9
+	android:label
+		ADDED from AndroidManifest.xml:239:13
+	android:name
+		ADDED from AndroidManifest.xml:238:13
+activity#com.zengbobobase.demo.activity.WebViewJsLvmmActivity
+ADDED from AndroidManifest.xml:241:9
+	android:label
+		ADDED from AndroidManifest.xml:243:13
+	android:name
+		ADDED from AndroidManifest.xml:242:13
+activity#com.zengbobobase.demo.activity.PhoneDPIActivity
+ADDED from AndroidManifest.xml:245:9
+	android:label
+		ADDED from AndroidManifest.xml:247:13
+	android:name
+		ADDED from AndroidManifest.xml:246:13
+activity#com.zengbobobase.demo.activity.DP_SPActivity
+ADDED from AndroidManifest.xml:249:9
+	android:label
+		ADDED from AndroidManifest.xml:251:13
+	android:name
+		ADDED from AndroidManifest.xml:250:13
+activity#com.zengbobobase.demo.activity.ResultActivity
+ADDED from AndroidManifest.xml:253:9
+	android:label
+		ADDED from AndroidManifest.xml:255:13
+	android:name
+		ADDED from AndroidManifest.xml:254:13
+activity#com.zengbobobase.demo.activity.MyScrollerActivity
+ADDED from AndroidManifest.xml:265:9
+	android:label
+		ADDED from AndroidManifest.xml:267:13
+	android:name
+		ADDED from AndroidManifest.xml:266:13
+activity#com.zengbobobase.demo.activity.MD5Activity
+ADDED from AndroidManifest.xml:269:9
+	android:label
+		ADDED from AndroidManifest.xml:271:13
+	android:name
+		ADDED from AndroidManifest.xml:270:13
+activity#com.zengbobobase.demo.activity.TextColorActivity
+ADDED from AndroidManifest.xml:273:9
+	android:label
+		ADDED from AndroidManifest.xml:275:13
+	android:name
+		ADDED from AndroidManifest.xml:274:13
+activity#com.zengbobobase.demo.activity.ListViewItemGridActivity
+ADDED from AndroidManifest.xml:277:9
+	android:label
+		ADDED from AndroidManifest.xml:279:13
+	android:name
+		ADDED from AndroidManifest.xml:278:13
+activity#com.zengbobobase.demo.activity.BitmapShadersActivity
+ADDED from AndroidManifest.xml:282:9
+	android:label
+		ADDED from AndroidManifest.xml:284:13
+	android:name
+		ADDED from AndroidManifest.xml:283:13
+activity#com.zengbobobase.demo.activity.OnclickActivity
+ADDED from AndroidManifest.xml:286:9
+	android:label
+		ADDED from AndroidManifest.xml:288:13
+	android:name
+		ADDED from AndroidManifest.xml:287:13
+activity#com.zengbobobase.demo.activity.ConnectivityManagerActivity
+ADDED from AndroidManifest.xml:290:9
+	android:label
+		ADDED from AndroidManifest.xml:292:13
+	android:name
+		ADDED from AndroidManifest.xml:291:13
+activity#com.zengbobobase.demo.activity.GifActivity
+ADDED from AndroidManifest.xml:294:9
+	android:label
+		ADDED from AndroidManifest.xml:296:13
+	android:name
+		ADDED from AndroidManifest.xml:295:13
+activity#com.zengbobobase.demo.activity.DalvikActivity
+ADDED from AndroidManifest.xml:298:9
+	android:label
+		ADDED from AndroidManifest.xml:300:13
+	android:name
+		ADDED from AndroidManifest.xml:299:13
+activity#com.zengbobobase.demo.activity.ReLoadWebVIEWActivity
+ADDED from AndroidManifest.xml:302:9
+	android:label
+		ADDED from AndroidManifest.xml:304:13
+	android:name
+		ADDED from AndroidManifest.xml:303:13
+activity#com.zengbobobase.demo.activity.MyListViewViewGroupActiviy
+ADDED from AndroidManifest.xml:306:9
+	android:label
+		ADDED from AndroidManifest.xml:308:13
+	android:name
+		ADDED from AndroidManifest.xml:307:13
+activity#com.zengbobobase.demo.activity.ExpandableListViewActivity
+ADDED from AndroidManifest.xml:310:9
+	android:label
+		ADDED from AndroidManifest.xml:312:13
+	android:name
+		ADDED from AndroidManifest.xml:311:13
+activity#com.zengbobobase.demo.activity.EditTextActivity
+ADDED from AndroidManifest.xml:314:9
+	android:label
+		ADDED from AndroidManifest.xml:316:13
+	android:name
+		ADDED from AndroidManifest.xml:315:13
+activity#com.zengbobobase.demo.activity.EditNotesActivity
+ADDED from AndroidManifest.xml:319:9
+	android:label
+		ADDED from AndroidManifest.xml:321:13
+	android:name
+		ADDED from AndroidManifest.xml:320:13
+activity#com.zengbobobase.demo.activity.RatingBarActivity
+ADDED from AndroidManifest.xml:324:9
+	android:label
+		ADDED from AndroidManifest.xml:326:13
+	android:name
+		ADDED from AndroidManifest.xml:325:13
+activity#com.zengbobobase.demo.activity.TestPathEffectActivity
+ADDED from AndroidManifest.xml:329:9
+	android:label
+		ADDED from AndroidManifest.xml:331:13
+	android:name
+		ADDED from AndroidManifest.xml:330:13
+activity#com.zengbobobase.demo.activity.VideoActivity
+ADDED from AndroidManifest.xml:335:9
+	android:label
+		ADDED from AndroidManifest.xml:337:13
+	android:name
+		ADDED from AndroidManifest.xml:336:13
+service#com.zengbobobase.demo.service.MyService
+ADDED from AndroidManifest.xml:343:9
+	android:priority
+		ADDED from AndroidManifest.xml:345:13
+	android:process
+		ADDED from AndroidManifest.xml:346:13
+	android:name
+		ADDED from AndroidManifest.xml:344:13
+meta-data#api_key
+ADDED from AndroidManifest.xml:442:9
+	android:name
+		ADDED from AndroidManifest.xml:443:13
+	android:value
+		ADDED from AndroidManifest.xml:444:13
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from xrz_application:zengbobobase:unspecified:12:5
+	android:name
+		ADDED from xrz_application:zengbobobase:unspecified:12:22
+activity#com.zengbobo.android.activity.MainActivity
+ADDED from xrz_application:zengbobobase:unspecified:22:9
+	android:label
+		ADDED from xrz_application:zengbobobase:unspecified:24:13
+	android:name
+		ADDED from xrz_application:zengbobobase:unspecified:23:13
+activity#com.zengbobo.android.testActivity.TestActivity
+ADDED from xrz_application:zengbobobase:unspecified:31:9
+	android:label
+		ADDED from xrz_application:zengbobobase:unspecified:33:13
+	android:name
+		ADDED from xrz_application:zengbobobase:unspecified:32:13
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from AndroidManifest.xml:2:1 reason: com.zengbobo.android requested WRITE_EXTERNAL_STORAGE

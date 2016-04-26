@@ -1,0 +1,9 @@
+1.查看应用内存使用情况
+        //$package_name：应用包名
+        //$pid：应用进程ID，可以用PS命令查看
+        adb shell dumpsys meminfo $package_name or $pid
+
+
+2.利用MAT分析内存堆
+    a.用的最多的功能是 Histogram,点击 Actions下的 Histogram项将得到 Histogram结果：
+        http://www.cnblogs.com/0616--ataozhijia/p/3954423.html

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <com.qin.scrollerview.MultiViewGroup
+            android:id="@+id/mymultiViewGroup"
+            android:layout_height="wrap_content" android:layout_width="wrap_content">
+    </com.qin.scrollerview.MultiViewGroup>
+    <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button android:id="@+id/scroll_left"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:text="向左滑动一屏"/>
+
+        <Button android:id="@+id/stop_scroll"
+                android:layout_width="100dip"
+                  android:layout_height="fill_parent"
+                android:text="停止滑动"/>
+
+        <Button android:id="@+id/log_data"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:text="打印数据"/>
+        <Button android:id="@+id/scroll_right"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:text="向右滑动一屏"/>
+    </LinearLayout>
+  </FrameLayout>
+<!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/layout/multiview.xml -->

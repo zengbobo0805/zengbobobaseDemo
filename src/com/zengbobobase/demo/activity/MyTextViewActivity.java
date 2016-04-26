@@ -1,26 +1,27 @@
 package com.zengbobobase.demo.activity;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 
-import com.zengbobobase.demo.R;
-import com.zengbobobase.demo.myview.MyTextView;
-import com.zengbobobase.demo.myview.MyTextViewChange;
-import com.zengbobobase.demo.utils.DisplayUtil;
+import com.zengbobobase.demo.view.ViewPageIndicator;
 
 public class MyTextViewActivity extends Activity {
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ViewPageIndicator view = new ViewPageIndicator(this);
+
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT
+                , 100);
+        params.setMargins(20,20,20,20);
+        setContentView(view,params);
 //		TextView tv = new  TextView(this);
 //		setContentView(R.layout.my_textview_layout);
 //		LinearLayout container = (LinearLayout) findViewById(R.id.container);
 //		MyTextViewChange myTextView1 = new MyTextViewChange(this);
 //		container.addView(myTextView1);
-		setContentView(R.layout.activity_my_textview_layout);
+//		setContentView(R.layout.activity_my_textview_layout);
 //		MyTextView myTextView2 = new MyTextView(this);
 //		myTextView2.setText("居左的文本");
 //		myTextView2.setTextSize(25);
@@ -93,5 +94,5 @@ public class MyTextViewActivity extends Activity {
 //		myTextView9.setBackgroundColor(Color.BLUE);
 //		container.addView(myTextView9, LinearLayout.LayoutParams.MATCH_PARENT,
 //				DisplayUtil.dip2px(this, 150));
-	}
+    }
 }

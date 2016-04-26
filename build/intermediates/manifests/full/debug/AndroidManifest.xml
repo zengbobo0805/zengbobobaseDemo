@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zengbobobase.demo"
+    android:versionCode="21"
+    android:versionName="2.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <!-- 获取应用程序大小权限 -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <!-- 访问Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+ <!-- CrossWalk -->
+    <!--
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+    <application
+        android:name="com.zengbobobase.demo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name_title"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zengbobobase.demo.activity.MainActivity"
+            android:label="@string/app_name_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.SQliteDBActivity"
+            android:label="SQliteDBActivity数据库测试" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.SqliteThreadActivity"
+            android:label="SqliteThreadActivity数据库测试" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestAndroidActivity"
+            android:label="TestAndroidActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.FirstActivity"
+            android:label="获取应用程序缓存、数据、代码大小" >
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.zengbobobase.demo.activity.ApplicationTotalActivityame" -->
+        <!-- android:label="获取手机安装应用程序信息" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.zengbobobase.demo.activity.HandlerUIActivity"
+            android:label="线程handler更新UI" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MulThreadDownLoadFileActivity"
+            android:label="多线程同时下载同一文件" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PrintActivity"
+            android:label="打印信息" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.receiver.PushDemoActivity"
+            android:label="@string/app_name_title" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.SinaActivity"
+            android:label="新浪微博webview" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.GsonActivity"
+            android:label="JSON测试" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.GsonParseOrToJsonActivity"
+            android:label="GsonParseOrToJsonActivity,JSON测试" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestActivity"
+            android:label="测试TestActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.Experiment_ac_Demo"
+            android:label="波形图的绘制Experiment_ac_Demo" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PaintAndPathActivity"
+            android:label="绘制几何图形PaintAndPathActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PainMatrixActivity"
+            android:label="图形特效，使用Matrix实现旋转、缩放和平移PainMatrixActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PainShaderActivity"
+            android:label="图形特效，使用Shader类渲染图形PainShaderActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MyTextViewActivity"
+            android:label="自定义textview--Android UI 之居间绘制文本内容的正确方法" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.SinaSDKActivity"
+            android:label="调用新浪微博SDK,从第三方 应用 唤起 微博客户端" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.zengbobobase.demo.sinweibo.ShareActivity" -->
+        <!-- android:label="新浪微博SDKShareActivity" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:label="腾讯SDK给应用的AndroidManifest增加SDK需要的配置"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100307986" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="腾讯SDK开发者因为忘了增加onActivityResult代码，而导致无法获得回调。"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.zengbobobase.demo.tencent.my.TencentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="腾讯sdk调用" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ApplicationTotalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="微信sdk调用" >
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".wxapi.WXEntryActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:label="微信WXEntryActivity" > -->
+        <!-- </activity> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".MainActivity" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".SecondActivity" -->
+        <!-- android:label="com.flavienlaurent.activityanimation.app.SecondActivity"> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".DoorActivity" -->
+        <!-- android:label="com.flavienlaurent.activityanimation.app.DoorActivity"> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".ThirdActivity" -->
+        <!-- android:label="com.flavienlaurent.activityanimation.app.ThirdActivity" -->
+        <!-- android:windowSoftInputMode="stateHidden"> -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.zengbobobase.demo.activity.MergeActivity"
+            android:label="MergeActivity" >
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name="com.zengbobobase.demo.activity.CrossWalkActivity" -->
+        <!-- android:hardwareAccelerated="true" -->
+        <!-- android:label="CrossWalkActivity" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsRouDongActivity"
+            android:label="WebViewJsRouDongActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsRichTextActivity"
+            android:label="WebViewJsRichTextActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsActivity"
+            android:hardwareAccelerated="true"
+            android:label="WebViewJsActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsNewActivity"
+            android:label="WebViewJsNewActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.WebViewJsLvmmActivity"
+            android:label="WebViewJsLvmmActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.PhoneDPIActivity"
+            android:label="查看手机基本信息" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.DP_SPActivity"
+            android:label="dp,sp在系统下的字体设置效果" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ResultActivity"
+            android:label="@string/app_name_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="LvmmLogin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MyScrollerActivity"
+            android:label="MyScrollerActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MD5Activity"
+            android:label="得到任意apk公钥信息的md5字符串" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.TextColorActivity"
+            android:label="TextColorActivity颜色值" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ListViewItemGridActivity"
+            android:label="ListViewItemGridActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.BitmapShadersActivity"
+            android:label="BitmapShaders构造渲染器" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.OnclickActivity"
+            android:label="OnclickActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ConnectivityManagerActivity"
+            android:label="ConnectivityManager服务" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.GifActivity"
+            android:label="GifActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.DalvikActivity"
+            android:label="]Android内存管理及内存泄露DalvikActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ReLoadWebVIEWActivity"
+            android:label="ReLoadWebVIEWActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.MyListViewViewGroupActiviy"
+            android:label="仿ios7信息栏滑动删除MyListViewViewGroupActiviy" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.ExpandableListViewActivity"
+            android:label="ExpandableListViewActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.EditTextActivity"
+            android:label="EditText属性测试" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.EditNotesActivity"
+            android:label="EditNotesActivity" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.RatingBarActivity"
+            android:label="RatingBar" >
+        </activity>
+        <activity
+            android:name="com.zengbobobase.demo.activity.TestPathEffectActivity"
+            android:label="RatingBar" >
+        </activity>
+
+        <!-- 视频 -->
+        <activity
+            android:name="com.zengbobobase.demo.activity.VideoActivity"
+            android:label="VideoActivity" >
+        </activity>
+
+        <service
+            android:name="com.zengbobobase.demo.service.MyService"
+            android:priority="1000"
+            android:process=":zengbobo_push" >
+        </service>
+
+        <!--
+           <activity
+               android:name="com.baidu.push.example.PushDemoActivity"
+               android:label="@string/app_name"
+               android:launchMode="singleTask"
+               android:screenOrientation="portrait" >
+           </activity>
+           <activity
+               android:name="com.baidu.push.example.LoginActivity"
+               android:configChanges="orientation|keyboardHidden"
+               android:label="@string/app_name" >
+           </activity>
+           <activity
+               android:name="com.baidu.push.example.CustomActivity"
+               android:configChanges="orientation|keyboardHidden"
+               android:launchMode="singleTask" >
+           </activity>
+        -->
+
+
+        <!-- push富媒体，不使用富媒体推送不需要 -->
+        <!--
+                    <activity
+                   android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
+                   android:configChanges="orientation|keyboardHidden"
+                   android:label="MediaViewActivity" >
+               </activity>
+               <activity
+                   android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
+                   android:configChanges="orientation|keyboardHidden"
+                   android:label="MediaListActivity"
+                   android:launchMode="singleTask" >
+               </activity>
+        -->
+        <!-- push富媒体结束 -->
+
+
+        <!-- push应用定义消息receiver声明 -->
+        <!--
+        <receiver android:name="com.zengbobobase.demo.receiver.MyPushMessageReceiver" >
+            <intent-filter>
+
+                接收push消息
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                接收bind,unbind,fetch,delete等反馈消息
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- push必须的receviver和service声明 -->
+        <!--
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!--
+          <receiver
+              android:name="com.baidu.android.pushservice.RegistrationReceiver"
+              android:process=":bdservice_v1" >
+              <intent-filter>
+                  <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                  <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+              </intent-filter>
+              <intent-filter>
+                  <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                  <data android:scheme="package" />
+              </intent-filter>
+          </receiver>
+        -->
+        <!--
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        -->
+        <!-- push结束 -->
+
+
+        <!--
+                   <receiver android:name="com.zengbobobase.demo.receiver.BootBroastReceiver" >
+                  <intent-filter>
+                      <action android:name="android.intent.action.USER_PRESENT" />
+                      <action android:name="android.intent.action.BOOT_COMPLETED" />
+                  </intent-filter>
+              </receiver>
+        -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key oKmTU7OoXtZA5mypukHiRGvP -->
+        <meta-data
+            android:name="api_key"
+            android:value="oKmTU7OoXtZA5mypukHiRGvP" />
+
+        <!-- 高德地图key  a0ecf52574c88f8c4433cf52469138cc -->
+        <activity
+            android:name="com.zengbobo.android.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zengbobo.android.testActivity.TestActivity"
+            android:label="TestActivity" />
+    </application>
+
+</manifest>

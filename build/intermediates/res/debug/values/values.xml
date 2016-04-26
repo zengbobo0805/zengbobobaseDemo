@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="reference" name="CustomizeStyle"/>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/color.xml -->
+    <eat-comment/>
+    <color name="app_textColor_red">#e44d42</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff75a6ff</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_5d5c5c">#5d5c5c</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_c00000">#c01111</color>
+    <color name="color_c10000">#c15500</color>
+    <color name="color_c20000">#c20055</color>
+    <color name="color_c30000">#c30550</color>
+    <color name="color_c40000">#c400ff</color>
+    <color name="color_c50000">#f50000</color>
+    <color name="color_c60000">#c6f000</color>
+    <color name="color_c70000">#c70000</color>
+    <color name="color_c80000">#c80000</color>
+    <color name="color_c90000">#c90000</color>
+    <color name="color_ca0000">#ca0000</color>
+    <color name="color_f35636">#f35636</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="text_num_gray">#333</color>
+    <color name="translucence">#ff4e4752</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_guide_bg">#f5f5f5</color>
+    <declare-styleable name="CustomTextview"><attr format="dimension" name="titleSize"/><attr format="dimension" name="priceSize"/><attr format="dimension" name="qiSize"/><attr format="dimension" name="danWeiSize"/><attr format="color" name="titleColor"/><attr format="color" name="priceColor"/><attr format="color" name="qiColor"/><attr format="color" name="danWeiColor"/><attr format="string" name="title"/><attr format="string" name="price"/><attr format="string" name="priceDanWeiS"/><attr format="string" name="priceQiS"/></declare-styleable>
+    <declare-styleable name="CustomTheme"><attr format="reference" name="gifMoviewViewStyle"/></declare-styleable>
+    <declare-styleable name="GifMoviewView"><attr format="reference" name="gif"/><attr format="boolean" name="paused"/></declare-styleable>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/build/intermediates/exploded-aar/xrz_application/zengbobobase/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dialog_bottom_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">10dp</dimen>
+    <dimen name="dialog_left_margin">10dp</dimen>
+    <dimen name="dialog_right_margin">10dp</dimen>
+    <dimen name="dialog_title_height">30dp</dimen>
+    <dimen name="dialog_title_logo_left_margin">5dp</dimen>
+    <dimen name="dialog_top_margin">30dp</dimen>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">com_weibo_android</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/mul_thread_file_download_strings.xml -->
+    <eat-comment/>
+    <string name="app_name_1">多线程断点下载器_欧阳鹏编写</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name_title">zengbobobaseDemo</string>
+    <string name="attention">注意</string>
+    <string name="cancel">否</string>
+    <string name="clear_log">清除日志</string>
+    <string name="close">关闭</string>
+    <string name="custom_text_hint">用户自定义行为打开的Activity</string>
+    <string name="del_pic">是否删除图片？</string>
+    <string name="delete_all">是否要删除这条微博？</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/mul_thread_file_download_strings.xml -->
+    <eat-comment/>
+    <string name="error">下载失败</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello">Hello World, TextActivity!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="line">线</string>
+    <string name="log_tip">日志：</string>
+    <string name="login">登录</string>
+    <string name="media">Rich Media</string>
+    <string name="ok">是</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/mul_thread_file_download_strings.xml -->
+    <eat-comment/>
+    <string name="path">下载路径</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="please_login">请登录！</string>
+    <string name="rmb">¥</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/mul_thread_file_download_strings.xml -->
+    <eat-comment/>
+    <string name="sdcarderror">SDCard不存在或者写保护</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="send">发送</string>
+    <string name="send_failed">分享失败！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="speci_price_image">特价游</string>
+    <string name="speci_price_leave_time">剩余抢购时间</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/mul_thread_file_download_strings.xml -->
+    <eat-comment/>
+    <string name="startbutton">开始下载</string>
+    <string name="stopbutton">停止下载</string>
+    <string name="success">下载完成</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="tags_hint">请输入多个标签，以英文逗号隔开</string>
+    <string name="text_btn_delTags">删除标签</string>
+    <string name="text_btn_init">百度账号绑定</string>
+    <string name="text_btn_init1">更换百度账号</string>
+    <string name="text_btn_initAK">无账号绑定</string>
+    <string name="text_btn_rich">富媒体消息</string>
+    <string name="text_btn_senior">高级功能</string>
+    <string name="text_btn_set">设置</string>
+    <string name="text_btn_setTags">设置标签</string>
+    <string name="text_media_title">富媒体消息列表</string>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/build/intermediates/exploded-aar/xrz_application/zengbobobase/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme1" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:dialogTheme">@style/CustomDialogStyle</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <!--<item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>-->
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/build/intermediates/exploded-aar/xrz_application/zengbobobase/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AppTheme1" parent="AppBaseTheme1">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ContentOverlay" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/build/intermediates/exploded-aar/xrz_application/zengbobobase/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- From: file:/D:/android_dev/xrz_application/zengbobobaseDemo/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"/>
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+         <!-- 
+        <item name="android:minWidth">10dip</item>
+        <item name="android:maxWidth">10dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item> -->
+    </style>
+</resources>

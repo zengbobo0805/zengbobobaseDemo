@@ -44,4 +44,6 @@
     <color name="color_c80000">#c80000</color>
     <color name="color_c90000">#c90000</color>
     <color name="color_ca0000">#ca0000</color>
+
+    <color name="app_textColor_red">#e44d42</color>
 </resources> 

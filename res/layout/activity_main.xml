@@ -24,6 +24,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="10dp"
                 android:background="@color/blue"
+                android:textSize="@dimen/font_size_14"
                 android:text="scheme://"/>
 
 

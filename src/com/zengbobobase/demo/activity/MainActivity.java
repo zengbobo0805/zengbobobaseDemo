@@ -18,6 +18,7 @@ import com.zengbobobase.demo.R;
 import com.zengbobobase.demo.adapter.MyBaseAdapter;
 import com.zengbobobase.demo.model.BaseModel;
 import com.zengbobobase.demo.utils.Base64Utils;
+import com.zengbobobase.demo.utils.DisplayUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 //		img = (ImageView) findViewById(R.id.tv);
 		tv = (TextView) findViewById(R.id.tv);
+		System.out.println("MainActivity onCreate tv.getTextSize():"+tv.getTextSize()+",dip2px:"+ DisplayUtil.dip2px(this,14));
 		tv.setOnClickListener(new View.OnClickListener() {
 
 			@Override

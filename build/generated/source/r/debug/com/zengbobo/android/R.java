@@ -8,14 +8,14 @@ package com.zengbobo.android;
 
 public final class R {
 	public static final class dimen {
-		public static final int activity_horizontal_margin = 0x7f040000;
-		public static final int activity_vertical_margin = 0x7f040001;
+		public static final int activity_horizontal_margin = 0x7f040002;
+		public static final int activity_vertical_margin = 0x7f040007;
 	}
 	public static final class drawable {
 		public static final int ic_launcher = 0x7f02001c;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f09007a;
+		public static final int action_settings = 0x7f09007d;
 		public static final int tv = 0x7f090001;
 	}
 	public static final class layout {

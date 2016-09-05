@@ -30,9 +30,7 @@
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
  <!-- CrossWalk -->
     <!--
      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -324,7 +322,13 @@
         <!-- 视频 -->
         <activity
             android:name="com.zengbobobase.demo.activity.VideoActivity"
-            android:label="VideoActivity" >
+            android:label="VideoActivity视频" >
+        </activity>
+
+        <!-- 视频 -->
+        <activity
+            android:name="com.zengbobobase.demo.activity.ValuesDimensActivity"
+            android:label="ValuesDimensActivity 不同分辨率下字体显示" >
         </activity>
 
         <service

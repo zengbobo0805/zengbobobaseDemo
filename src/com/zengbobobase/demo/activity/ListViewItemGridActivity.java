@@ -53,8 +53,8 @@ public class ListViewItemGridActivity extends Activity {
 			}else{
 				viewHold = (ViewHold) convertView.getTag();
 			}
-			
-			return null;
+
+			return convertView;
 		}
 		
 		class ViewHold{

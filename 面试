@@ -1,0 +1,44 @@
+
+http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzYwNA==&mid=2651433617&idx=1&sn=4362f2303f2cab0b45d84dbbcd666fa2&scene=4#wechat_redirect
+
+一个五年Android 开发者百度、阿里、聚美、映客的面试心经
+
+Java 的内存管理
+
+二分法
+
+handler 原理
+
+windowManager
+
+Java 层面的东西，多态，抽象类，多线程，内存管理
+
+volatile
+
+View 的事件分发机制
+
+Service 上能不能弹出对话框
+
+动画实现原理
+
+
+recyclerview + fresco
+
+View 的事件分发机制，View的绘图，ListView 的实现原理（
+
+
+一般情况下第一轮都是基础面试，需要扎实的基础
+    最常用的Android 基础知识
+    Java 基础知识
+    了解一些 常用东西的原理，例如：handler， tHRead 等
+    项目中的技术点
+第二轮的时候需要了解更深层次的东西
+    Android 事件分发机制原理
+    Android 绘图机制原理
+    WindowManager 的相关知识
+    进程间传输方式
+    Java 内存管理机制
+    一些常用的 list,map 原理，以及子类之间的差别
+
+
+    Android 5.0 之上有一个辅助功能，如果用户开启后，就能像豌豆荚那样自动安装app,等同于拥有了root权限，但是手机重启后，这个就自动关闭了，有没有办法可以自动打开呢？』据他了解，有很多不知名的小App 都实现了，但是很多大公司都没用。

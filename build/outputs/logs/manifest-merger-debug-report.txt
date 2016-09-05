@@ -1,490 +1,496 @@
 -- Merging decision tree log ---
 manifest
-ADDED from AndroidManifest.xml:2:1
-	xmlns:tools
-		ADDED from AndroidManifest.xml:3:11
-	xmlns:android
-		ADDED from AndroidManifest.xml:5:11
-	tools:replace
-		ADDED from AndroidManifest.xml:4:11
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:2:1-453:12
 	package
-		ADDED from AndroidManifest.xml:2:11
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:2:11-42
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
 	android:versionName
-		ADDED from AndroidManifest.xml:7:11
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:7:11-36
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:3:11-57
 	android:versionCode
-		ADDED from AndroidManifest.xml:6:11
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
-uses-sdk
-ADDED from AndroidManifest.xml:9:5
-MERGED from com.android.support:multidex:1.0.1:18:5
-MERGED from xrz_application:zengbobobase:unspecified:7:5
-	android:targetSdkVersion
-		ADDED from AndroidManifest.xml:11:9
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
-	android:minSdkVersion
-		ADDED from AndroidManifest.xml:10:9
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
-uses-permission#android.permission.GET_PACKAGE_SIZE
-ADDED from AndroidManifest.xml:14:5
-MERGED from xrz_application:zengbobobase:unspecified:14:5
-	android:name
-		ADDED from AndroidManifest.xml:14:22
-uses-permission#android.permission.INTERNET
-ADDED from AndroidManifest.xml:16:5
-	android:name
-		ADDED from AndroidManifest.xml:16:22
-uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from AndroidManifest.xml:18:5
-	android:name
-		ADDED from AndroidManifest.xml:18:22
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:20:5
-MERGED from xrz_application:zengbobobase:unspecified:11:5
-	android:name
-		ADDED from AndroidManifest.xml:20:22
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from AndroidManifest.xml:21:5
-	android:name
-		ADDED from AndroidManifest.xml:21:22
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from AndroidManifest.xml:22:5
-	android:name
-		ADDED from AndroidManifest.xml:22:22
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from AndroidManifest.xml:24:5
-	android:name
-		ADDED from AndroidManifest.xml:24:22
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from AndroidManifest.xml:25:5
-	android:name
-		ADDED from AndroidManifest.xml:25:22
-uses-permission#android.permission.WRITE_SETTINGS
-ADDED from AndroidManifest.xml:26:5
-	android:name
-		ADDED from AndroidManifest.xml:26:22
-uses-permission#android.permission.VIBRATE
-ADDED from AndroidManifest.xml:27:5
-	android:name
-		ADDED from AndroidManifest.xml:27:22
-uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
-ADDED from AndroidManifest.xml:28:5
-	android:name
-		ADDED from AndroidManifest.xml:28:22
-uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
-ADDED from AndroidManifest.xml:29:5
-	android:name
-		ADDED from AndroidManifest.xml:29:22
-uses-permission#android.permission.DISABLE_KEYGUARD
-ADDED from AndroidManifest.xml:30:5
-	android:name
-		ADDED from AndroidManifest.xml:30:22
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from AndroidManifest.xml:31:5
-	android:name
-		ADDED from AndroidManifest.xml:31:22
-uses-permission#android.permission.RUN_INSTRUMENTATION
-ADDED from AndroidManifest.xml:32:5
-	android:name
-		ADDED from AndroidManifest.xml:32:22
-application
-ADDED from AndroidManifest.xml:46:5
-MERGED from xrz_application:zengbobobase:unspecified:16:5
-	android:allowBackup
-		ADDED from xrz_application:zengbobobase:unspecified:18:9
-	android:label
-		ADDED from AndroidManifest.xml:50:9
-		REJECTED from xrz_application:zengbobobase:unspecified:20:9
-	android:icon
-		ADDED from AndroidManifest.xml:49:9
-		REJECTED from xrz_application:zengbobobase:unspecified:19:9
-	android:theme
-		ADDED from AndroidManifest.xml:51:9
-		REJECTED from xrz_application:zengbobobase:unspecified:21:9
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:6:11-34
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:5:11-69
 	tools:replace
-		ADDED from AndroidManifest.xml:48:9
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:4:11-66
+uses-sdk
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:9:5-11:40
+MERGED from [com.android.support:multidex:1.0.1] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:11:9-38
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:10:9-34
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+		INJECTED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml
+uses-permission#android.permission.GET_PACKAGE_SIZE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:14:5-74
+MERGED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:14:5-75
 	android:name
-		ADDED from AndroidManifest.xml:47:9
-		REJECTED from xrz_application:zengbobobase:unspecified:17:9
-activity#com.zengbobobase.demo.activity.MainActivity
-ADDED from AndroidManifest.xml:53:9
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.INTERNET
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:16:22-64
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:18:5-83
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:18:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:20:5-80
+MERGED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:21:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:24:5-74
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:24:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:25:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:26:5-72
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:26:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:27:5-65
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:27:22-63
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:28:22-79
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:29:5-87
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:29:22-85
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:30:5-74
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:30:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:31:5-80
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:31:22-78
+uses-permission#android.permission.RUN_INSTRUMENTATION
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:32:5-77
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:32:22-75
+application
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:46:5-451:19
+MERGED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:16:5-34:19
 	android:label
-		ADDED from AndroidManifest.xml:55:13
-	android:name
-		ADDED from AndroidManifest.xml:54:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:56:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:57:17
-	android:name
-		ADDED from AndroidManifest.xml:57:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:59:17
-	android:name
-		ADDED from AndroidManifest.xml:59:27
-activity#com.zengbobobase.demo.activity.SQliteDBActivity
-ADDED from AndroidManifest.xml:62:9
-	android:label
-		ADDED from AndroidManifest.xml:64:13
-	android:name
-		ADDED from AndroidManifest.xml:63:13
-activity#com.zengbobobase.demo.activity.SqliteThreadActivity
-ADDED from AndroidManifest.xml:66:9
-	android:label
-		ADDED from AndroidManifest.xml:68:13
-	android:name
-		ADDED from AndroidManifest.xml:67:13
-activity#com.zengbobobase.demo.activity.TestAndroidActivity
-ADDED from AndroidManifest.xml:71:9
-	android:label
-		ADDED from AndroidManifest.xml:73:13
-	android:name
-		ADDED from AndroidManifest.xml:72:13
-activity#com.zengbobobase.demo.activity.FirstActivity
-ADDED from AndroidManifest.xml:75:9
-	android:label
-		ADDED from AndroidManifest.xml:77:13
-	android:name
-		ADDED from AndroidManifest.xml:76:13
-activity#com.zengbobobase.demo.activity.HandlerUIActivity
-ADDED from AndroidManifest.xml:83:9
-	android:label
-		ADDED from AndroidManifest.xml:85:13
-	android:name
-		ADDED from AndroidManifest.xml:84:13
-activity#com.zengbobobase.demo.activity.MulThreadDownLoadFileActivity
-ADDED from AndroidManifest.xml:87:9
-	android:label
-		ADDED from AndroidManifest.xml:89:13
-	android:name
-		ADDED from AndroidManifest.xml:88:13
-activity#com.zengbobobase.demo.activity.PrintActivity
-ADDED from AndroidManifest.xml:91:9
-	android:label
-		ADDED from AndroidManifest.xml:93:13
-	android:name
-		ADDED from AndroidManifest.xml:92:13
-activity#com.zengbobobase.demo.receiver.PushDemoActivity
-ADDED from AndroidManifest.xml:95:9
-	android:label
-		ADDED from AndroidManifest.xml:97:13
-	android:name
-		ADDED from AndroidManifest.xml:96:13
-activity#com.zengbobobase.demo.activity.SinaActivity
-ADDED from AndroidManifest.xml:99:9
-	android:label
-		ADDED from AndroidManifest.xml:101:13
-	android:name
-		ADDED from AndroidManifest.xml:100:13
-activity#com.zengbobobase.demo.activity.GsonActivity
-ADDED from AndroidManifest.xml:103:9
-	android:label
-		ADDED from AndroidManifest.xml:105:13
-	android:name
-		ADDED from AndroidManifest.xml:104:13
-activity#com.zengbobobase.demo.activity.GsonParseOrToJsonActivity
-ADDED from AndroidManifest.xml:108:9
-	android:label
-		ADDED from AndroidManifest.xml:110:13
-	android:name
-		ADDED from AndroidManifest.xml:109:13
-activity#com.zengbobobase.demo.activity.TestActivity
-ADDED from AndroidManifest.xml:114:9
-	android:label
-		ADDED from AndroidManifest.xml:116:13
-	android:name
-		ADDED from AndroidManifest.xml:115:13
-activity#com.zengbobobase.demo.activity.Experiment_ac_Demo
-ADDED from AndroidManifest.xml:118:9
-	android:label
-		ADDED from AndroidManifest.xml:120:13
-	android:name
-		ADDED from AndroidManifest.xml:119:13
-activity#com.zengbobobase.demo.activity.PaintAndPathActivity
-ADDED from AndroidManifest.xml:123:9
-	android:label
-		ADDED from AndroidManifest.xml:125:13
-	android:name
-		ADDED from AndroidManifest.xml:124:13
-activity#com.zengbobobase.demo.activity.PainMatrixActivity
-ADDED from AndroidManifest.xml:128:9
-	android:label
-		ADDED from AndroidManifest.xml:130:13
-	android:name
-		ADDED from AndroidManifest.xml:129:13
-activity#com.zengbobobase.demo.activity.PainShaderActivity
-ADDED from AndroidManifest.xml:134:9
-	android:label
-		ADDED from AndroidManifest.xml:136:13
-	android:name
-		ADDED from AndroidManifest.xml:135:13
-activity#com.zengbobobase.demo.activity.MyTextViewActivity
-ADDED from AndroidManifest.xml:139:9
-	android:label
-		ADDED from AndroidManifest.xml:141:13
-	android:name
-		ADDED from AndroidManifest.xml:140:13
-activity#com.zengbobobase.demo.activity.SinaSDKActivity
-ADDED from AndroidManifest.xml:143:9
-	android:label
-		ADDED from AndroidManifest.xml:145:13
-	android:name
-		ADDED from AndroidManifest.xml:144:13
-intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from AndroidManifest.xml:146:13
-action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from AndroidManifest.xml:147:17
-	android:name
-		ADDED from AndroidManifest.xml:147:25
-category#android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:149:17
-	android:name
-		ADDED from AndroidManifest.xml:149:27
-activity#com.tencent.tauth.AuthActivity
-ADDED from AndroidManifest.xml:156:9
-	android:noHistory
-		ADDED from AndroidManifest.xml:160:13
-	android:label
-		ADDED from AndroidManifest.xml:158:13
-	android:name
-		ADDED from AndroidManifest.xml:157:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:159:13
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:161:13
-action#android.intent.action.VIEW
-ADDED from AndroidManifest.xml:162:17
-	android:name
-		ADDED from AndroidManifest.xml:162:25
-category#android.intent.category.BROWSABLE
-ADDED from AndroidManifest.xml:165:17
-	android:name
-		ADDED from AndroidManifest.xml:165:27
-data
-ADDED from AndroidManifest.xml:167:17
-	android:scheme
-		ADDED from AndroidManifest.xml:167:23
-activity#com.tencent.connect.common.AssistActivity
-ADDED from AndroidManifest.xml:170:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:174:13
-	android:label
-		ADDED from AndroidManifest.xml:173:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:172:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:50:9-47
+		REJECTED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:20:9-41
+	android:icon
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:49:9-45
+		REJECTED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from AndroidManifest.xml:175:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:51:9-40
+		REJECTED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:21:9-41
+	tools:replace
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:48:9-78
 	android:name
-		ADDED from AndroidManifest.xml:171:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:47:9-59
+		REJECTED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:17:9-58
+activity#com.zengbobobase.demo.activity.MainActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:53:9-61:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:55:13-51
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:54:13-71
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:56:13-60:29
+action#android.intent.action.MAIN
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:57:17-68
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:57:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:59:17-76
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:59:27-74
+activity#com.zengbobobase.demo.activity.SQliteDBActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:62:9-65:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:64:13-50
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:63:13-75
+activity#com.zengbobobase.demo.activity.SqliteThreadActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:66:9-69:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:68:13-54
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:67:13-79
+activity#com.zengbobobase.demo.activity.TestAndroidActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:71:9-74:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:73:13-48
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:72:13-78
+activity#com.zengbobobase.demo.activity.FirstActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:75:9-78:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:77:13-45
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:76:13-72
+activity#com.zengbobobase.demo.activity.HandlerUIActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:83:9-86:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:85:13-42
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:84:13-76
+activity#com.zengbobobase.demo.activity.MulThreadDownLoadFileActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:87:9-90:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:89:13-40
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:88:13-88
+activity#com.zengbobobase.demo.activity.PrintActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:91:9-94:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:93:13-33
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:92:13-72
+activity#com.zengbobobase.demo.receiver.PushDemoActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:95:9-98:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:97:13-51
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:96:13-75
+activity#com.zengbobobase.demo.activity.SinaActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:99:9-102:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:101:13-40
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:100:13-71
+activity#com.zengbobobase.demo.activity.GsonActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:103:9-106:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:105:13-35
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:104:13-71
+activity#com.zengbobobase.demo.activity.GsonParseOrToJsonActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:108:9-111:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:110:13-61
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:109:13-84
+activity#com.zengbobobase.demo.activity.TestActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:114:9-117:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:116:13-43
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:115:13-71
+activity#com.zengbobobase.demo.activity.Experiment_ac_Demo
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:118:9-121:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:120:13-53
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:119:13-77
+activity#com.zengbobobase.demo.activity.PaintAndPathActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:123:9-126:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:125:13-55
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:124:13-79
+activity#com.zengbobobase.demo.activity.PainMatrixActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:128:9-131:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:130:13-70
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:129:13-77
+activity#com.zengbobobase.demo.activity.PainShaderActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:134:9-137:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:136:13-65
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:135:13-77
+activity#com.zengbobobase.demo.activity.MyTextViewActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:139:9-142:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:141:13-67
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:140:13-77
+activity#com.zengbobobase.demo.activity.SinaSDKActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:143:9-151:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:145:13-55
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:144:13-74
+intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:146:13-150:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:147:17-91
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:147:25-89
+category#android.intent.category.DEFAULT
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:149:17-75
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:149:27-73
+activity#com.tencent.tauth.AuthActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:156:9-169:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:158:13-63
+	android:launchMode
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:159:13-44
+	android:noHistory
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:160:13-37
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:157:13-58
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:161:13-168:29
+action#android.intent.action.VIEW
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:162:17-68
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:162:25-66
+category#android.intent.category.BROWSABLE
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:165:17-77
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:165:27-75
+data
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:167:17-58
+	android:scheme
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:167:23-56
+activity#com.tencent.connect.common.AssistActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:170:9-175:74
+	android:screenOrientation
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:174:13-49
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:173:13-72
+	android:configChanges
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:172:13-74
+	android:theme
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:175:13-72
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:171:13-69
 activity#com.zengbobobase.demo.tencent.my.TencentActivity
-ADDED from AndroidManifest.xml:176:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:176:9-180:20
 	android:label
-		ADDED from AndroidManifest.xml:179:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:179:13-36
 	android:configChanges
-		ADDED from AndroidManifest.xml:178:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:178:13-74
 	android:name
-		ADDED from AndroidManifest.xml:177:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:177:13-76
 activity#com.zengbobobase.demo.activity.ApplicationTotalActivity
-ADDED from AndroidManifest.xml:181:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:181:9-185:20
 	android:label
-		ADDED from AndroidManifest.xml:184:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:184:13-36
 	android:configChanges
-		ADDED from AndroidManifest.xml:183:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:183:13-74
 	android:name
-		ADDED from AndroidManifest.xml:182:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:182:13-83
 activity#com.zengbobobase.demo.activity.MergeActivity
-ADDED from AndroidManifest.xml:214:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:214:9-217:20
 	android:label
-		ADDED from AndroidManifest.xml:216:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:216:13-42
 	android:name
-		ADDED from AndroidManifest.xml:215:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:215:13-72
 activity#com.zengbobobase.demo.activity.WebViewJsRouDongActivity
-ADDED from AndroidManifest.xml:224:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:224:9-227:20
 	android:label
-		ADDED from AndroidManifest.xml:226:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:226:13-53
 	android:name
-		ADDED from AndroidManifest.xml:225:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:225:13-83
 activity#com.zengbobobase.demo.activity.WebViewJsRichTextActivity
-ADDED from AndroidManifest.xml:228:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:228:9-231:20
 	android:label
-		ADDED from AndroidManifest.xml:230:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:230:13-54
 	android:name
-		ADDED from AndroidManifest.xml:229:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:229:13-84
 activity#com.zengbobobase.demo.activity.WebViewJsActivity
-ADDED from AndroidManifest.xml:232:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:232:9-236:20
 	android:label
-		ADDED from AndroidManifest.xml:235:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:235:13-46
 	android:hardwareAccelerated
-		ADDED from AndroidManifest.xml:234:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:234:13-47
 	android:name
-		ADDED from AndroidManifest.xml:233:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:233:13-76
 activity#com.zengbobobase.demo.activity.WebViewJsNewActivity
-ADDED from AndroidManifest.xml:237:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:237:9-240:20
 	android:label
-		ADDED from AndroidManifest.xml:239:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:239:13-49
 	android:name
-		ADDED from AndroidManifest.xml:238:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:238:13-79
 activity#com.zengbobobase.demo.activity.WebViewJsLvmmActivity
-ADDED from AndroidManifest.xml:241:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:241:9-244:20
 	android:label
-		ADDED from AndroidManifest.xml:243:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:243:13-50
 	android:name
-		ADDED from AndroidManifest.xml:242:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:242:13-80
 activity#com.zengbobobase.demo.activity.PhoneDPIActivity
-ADDED from AndroidManifest.xml:245:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:245:9-248:20
 	android:label
-		ADDED from AndroidManifest.xml:247:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:247:13-37
 	android:name
-		ADDED from AndroidManifest.xml:246:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:246:13-75
 activity#com.zengbobobase.demo.activity.DP_SPActivity
-ADDED from AndroidManifest.xml:249:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:249:9-252:20
 	android:label
-		ADDED from AndroidManifest.xml:251:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:251:13-45
 	android:name
-		ADDED from AndroidManifest.xml:250:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:250:13-72
 activity#com.zengbobobase.demo.activity.ResultActivity
-ADDED from AndroidManifest.xml:253:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:253:9-264:20
 	android:label
-		ADDED from AndroidManifest.xml:255:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:255:13-51
 	android:name
-		ADDED from AndroidManifest.xml:254:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:254:13-73
 activity#com.zengbobobase.demo.activity.MyScrollerActivity
-ADDED from AndroidManifest.xml:265:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:265:9-268:20
 	android:label
-		ADDED from AndroidManifest.xml:267:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:267:13-47
 	android:name
-		ADDED from AndroidManifest.xml:266:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:266:13-77
 activity#com.zengbobobase.demo.activity.MD5Activity
-ADDED from AndroidManifest.xml:269:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:269:9-272:20
 	android:label
-		ADDED from AndroidManifest.xml:271:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:271:13-47
 	android:name
-		ADDED from AndroidManifest.xml:270:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:270:13-70
 activity#com.zengbobobase.demo.activity.TextColorActivity
-ADDED from AndroidManifest.xml:273:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:273:9-276:20
 	android:label
-		ADDED from AndroidManifest.xml:275:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:275:13-49
 	android:name
-		ADDED from AndroidManifest.xml:274:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:274:13-76
 activity#com.zengbobobase.demo.activity.ListViewItemGridActivity
-ADDED from AndroidManifest.xml:277:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:277:9-280:20
 	android:label
-		ADDED from AndroidManifest.xml:279:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:279:13-53
 	android:name
-		ADDED from AndroidManifest.xml:278:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:278:13-83
 activity#com.zengbobobase.demo.activity.BitmapShadersActivity
-ADDED from AndroidManifest.xml:282:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:282:9-285:20
 	android:label
-		ADDED from AndroidManifest.xml:284:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:284:13-47
 	android:name
-		ADDED from AndroidManifest.xml:283:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:283:13-80
 activity#com.zengbobobase.demo.activity.OnclickActivity
-ADDED from AndroidManifest.xml:286:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:286:9-289:20
 	android:label
-		ADDED from AndroidManifest.xml:288:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:288:13-44
 	android:name
-		ADDED from AndroidManifest.xml:287:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:287:13-74
 activity#com.zengbobobase.demo.activity.ConnectivityManagerActivity
-ADDED from AndroidManifest.xml:290:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:290:9-293:20
 	android:label
-		ADDED from AndroidManifest.xml:292:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:292:13-50
 	android:name
-		ADDED from AndroidManifest.xml:291:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:291:13-86
 activity#com.zengbobobase.demo.activity.GifActivity
-ADDED from AndroidManifest.xml:294:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:294:9-297:20
 	android:label
-		ADDED from AndroidManifest.xml:296:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:296:13-40
 	android:name
-		ADDED from AndroidManifest.xml:295:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:295:13-70
 activity#com.zengbobobase.demo.activity.DalvikActivity
-ADDED from AndroidManifest.xml:298:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:298:9-301:20
 	android:label
-		ADDED from AndroidManifest.xml:300:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:300:13-60
 	android:name
-		ADDED from AndroidManifest.xml:299:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:299:13-73
 activity#com.zengbobobase.demo.activity.ReLoadWebVIEWActivity
-ADDED from AndroidManifest.xml:302:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:302:9-305:20
 	android:label
-		ADDED from AndroidManifest.xml:304:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:304:13-50
 	android:name
-		ADDED from AndroidManifest.xml:303:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:303:13-80
 activity#com.zengbobobase.demo.activity.MyListViewViewGroupActiviy
-ADDED from AndroidManifest.xml:306:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:306:9-309:20
 	android:label
-		ADDED from AndroidManifest.xml:308:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:308:13-67
 	android:name
-		ADDED from AndroidManifest.xml:307:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:307:13-85
 activity#com.zengbobobase.demo.activity.ExpandableListViewActivity
-ADDED from AndroidManifest.xml:310:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:310:9-313:20
 	android:label
-		ADDED from AndroidManifest.xml:312:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:312:13-55
 	android:name
-		ADDED from AndroidManifest.xml:311:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:311:13-85
 activity#com.zengbobobase.demo.activity.EditTextActivity
-ADDED from AndroidManifest.xml:314:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:314:9-317:20
 	android:label
-		ADDED from AndroidManifest.xml:316:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:316:13-41
 	android:name
-		ADDED from AndroidManifest.xml:315:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:315:13-75
 activity#com.zengbobobase.demo.activity.EditNotesActivity
-ADDED from AndroidManifest.xml:319:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:319:9-322:20
 	android:label
-		ADDED from AndroidManifest.xml:321:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:321:13-46
 	android:name
-		ADDED from AndroidManifest.xml:320:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:320:13-76
 activity#com.zengbobobase.demo.activity.RatingBarActivity
-ADDED from AndroidManifest.xml:324:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:324:9-327:20
 	android:label
-		ADDED from AndroidManifest.xml:326:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:326:13-38
 	android:name
-		ADDED from AndroidManifest.xml:325:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:325:13-76
 activity#com.zengbobobase.demo.activity.TestPathEffectActivity
-ADDED from AndroidManifest.xml:329:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:329:9-332:20
 	android:label
-		ADDED from AndroidManifest.xml:331:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:331:13-38
 	android:name
-		ADDED from AndroidManifest.xml:330:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:330:13-81
 activity#com.zengbobobase.demo.activity.VideoActivity
-ADDED from AndroidManifest.xml:335:9
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:335:9-338:20
 	android:label
-		ADDED from AndroidManifest.xml:337:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:337:13-44
 	android:name
-		ADDED from AndroidManifest.xml:336:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:336:13-72
+activity#com.zengbobobase.demo.activity.ValuesDimensActivity
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:342:9-345:20
+	android:label
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:344:13-60
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:343:13-79
 service#com.zengbobobase.demo.service.MyService
-ADDED from AndroidManifest.xml:343:9
-	android:priority
-		ADDED from AndroidManifest.xml:345:13
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:347:9-351:19
 	android:process
-		ADDED from AndroidManifest.xml:346:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:350:13-45
+	android:priority
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:349:13-36
 	android:name
-		ADDED from AndroidManifest.xml:344:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:348:13-67
 meta-data#api_key
-ADDED from AndroidManifest.xml:442:9
-	android:name
-		ADDED from AndroidManifest.xml:443:13
+ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:446:9-448:55
 	android:value
-		ADDED from AndroidManifest.xml:444:13
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:448:13-53
+	android:name
+		ADDED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:447:13-35
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from xrz_application:zengbobobase:unspecified:12:5
+ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from xrz_application:zengbobobase:unspecified:12:22
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:12:22-77
 activity#com.zengbobo.android.activity.MainActivity
-ADDED from xrz_application:zengbobobase:unspecified:22:9
+ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:22:9-30:20
 	android:label
-		ADDED from xrz_application:zengbobobase:unspecified:24:13
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:24:13-45
 	android:name
-		ADDED from xrz_application:zengbobobase:unspecified:23:13
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:23:13-70
 activity#com.zengbobo.android.testActivity.TestActivity
-ADDED from xrz_application:zengbobobase:unspecified:31:9
+ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:31:9-33:44
 	android:label
-		ADDED from xrz_application:zengbobobase:unspecified:33:13
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:33:13-41
 	android:name
-		ADDED from xrz_application:zengbobobase:unspecified:32:13
+		ADDED from [xrz_application:zengbobobase:unspecified] D:\android_dev\xrz_application\zengbobobaseDemo\build\intermediates\exploded-aar\xrz_application\zengbobobase\unspecified\AndroidManifest.xml:32:13-74
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from AndroidManifest.xml:2:1 reason: com.zengbobo.android requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\android_dev\xrz_application\zengbobobaseDemo\AndroidManifest.xml:2:1-453:12 reason: com.zengbobo.android requested WRITE_EXTERNAL_STORAGE
